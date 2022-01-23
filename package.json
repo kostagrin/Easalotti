@@ -1,0 +1,20 @@
+{
+  "name": "easalotti_2022",
+  "version": "1.0.0",
+  "description": "Easalotti project for my FE portfolio",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "FE",
+    "portfolio",
+    "Easalotti",
+    "skills"
+  ],
+  "author": "Konstantin Grinev",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
