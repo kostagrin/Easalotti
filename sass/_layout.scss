@@ -1,44 +1,11 @@
 .site-container {
     display: grid;
-    grid-template-rows: 100vh 54.7rem 1fr repeat(2, 48.7rem) 1fr;
+    grid-template-rows: 125vh 54.7rem 1fr repeat(2, 48.7rem) 1fr;
 }
 
 .gallery {
-
     &__row {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-
-        &__picture {
-            position: relative;
-
-            &--rtl {
-                &:first-child {
-                    grid-column: 2 / 3;
-                }
-            }
-
-            &__img {
-                display: block;
-                max-width: 50vw;
-                width: 100%;
-                object-fit: cover;
-            }
-
-            &__romb {
-                position: absolute;
-                top: 49%;
-                width: 3%;
-
-                &--stick-right {
-                    right: -1.5%;
-                }
-                
-                &--stick-left {
-                    left: -1.5%;
-                }
-            }
-        }
     }
 }
-  

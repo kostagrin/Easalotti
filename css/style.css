@@ -20,7 +20,11 @@ body {
 
 .site-container {
   display: grid;
-  grid-template-rows: 100vh 54.7rem repeat(4, 1fr); }
+  grid-template-rows: 125vh 54.7rem 1fr repeat(2, 48.7rem) 1fr; }
+
+.gallery__row {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
 
 .home {
   background-image: url(../img/home-1.jpg);
@@ -30,3 +34,51 @@ body {
 .about {
   background-color: #67182b;
   color: #fff; }
+
+.gallery__row--1 > *:first-child {
+  grid-column: 1 / 2; }
+
+.gallery__row--1 > *:last-child {
+  grid-column: 2 / 3; }
+
+.gallery__row--2 > *:first-child {
+  grid-column: 2 / 3; }
+
+.gallery__row--2 > *:last-child {
+  grid-column: 1 / 2; }
+
+.gallery__row--3 > *:first-child {
+  grid-column: 1 / 2; }
+
+.gallery__row--3 > *:last-child {
+  grid-column: 2 / 3; }
+
+.gallery__row--4 > *:first-child {
+  grid-column: 2 / 3; }
+
+.gallery__row--4 > *:last-child {
+  grid-column: 1 / 2; }
+
+.gallery__picture {
+  position: relative; }
+  .gallery__picture__img {
+    display: block;
+    max-width: 50vw;
+    width: 100%; }
+  .gallery__picture__romb {
+    position: absolute;
+    top: 48.5%;
+    width: 2vw; }
+    .gallery__picture__romb--right-stick {
+      right: -1vw; }
+    .gallery__picture__romb--left-stick {
+      left: -1vw; }
+
+.gallery__text {
+  grid-row: 1 / 2; }
+
+.process {
+  background-color: #84dbaa; }
+
+.book {
+  background-color: #67182b; }
