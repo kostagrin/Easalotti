@@ -8,5 +8,14 @@
     &__row {
         display: grid;
         grid-template-columns: repeat(2, 50%);
+
+        &__picture {
+            &__img {
+                display: block;
+                max-width: 50vw;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }
