@@ -10,12 +10,35 @@
         grid-template-columns: repeat(2, 50%);
 
         &__picture {
+            position: relative;
+
+            &--rtl {
+                &:first-child {
+                    grid-column: 2 / 3;
+                }
+            }
+
             &__img {
                 display: block;
                 max-width: 50vw;
                 width: 100%;
                 object-fit: cover;
             }
+
+            &__romb {
+                position: absolute;
+                top: 49%;
+                width: 3%;
+
+                &--stick-right {
+                    right: -1.5%;
+                }
+                
+                &--stick-left {
+                    left: -1.5%;
+                }
+            }
         }
     }
 }
+  
