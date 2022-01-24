@@ -20,4 +20,13 @@ body {
 
 .site-container {
   display: grid;
-  grid-template-rows: repeat(6, 1fr); }
+  grid-template-rows: 100vh 54.7rem repeat(4, 1fr); }
+
+.home {
+  background-image: url(../img/home-1.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.about {
+  background-color: #67182b;
+  color: #fff; }
