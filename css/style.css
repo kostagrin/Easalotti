@@ -20,7 +20,7 @@ body {
 
 .site-container {
   display: grid;
-  grid-template-rows: 125vh 54.7rem 1fr repeat(2, 48.7rem) 1fr; }
+  grid-template-rows: 125vh 54.7rem 1fr repeat(3, 48.7rem); }
 
 .gallery__row {
   display: grid;
@@ -78,7 +78,12 @@ body {
   grid-row: 1 / 2; }
 
 .process {
-  background-color: #84dbaa; }
+  background-image: url(../img/process-1.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .book {
-  background-color: #67182b; }
+  background-image: url(../img/apply-bg.jpg); }
+
+.footer {
+  background-color: #65182a; }

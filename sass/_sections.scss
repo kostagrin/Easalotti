@@ -88,10 +88,16 @@
 }
 
 .process {
-    background-color: rgb(132, 219, 170);
+    background-image: url(../img/process-1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .book {
-    background-color: rgb(103, 24, 43);
+    background-image: url(../img/apply-bg.jpg);
+  }
+
+  .footer {
+      background-color: $color-main;
   }
   
