@@ -1,0 +1,11 @@
+.h3 {
+    text-transform: uppercase;
+}
+
+.hr {
+    width: 50%;
+
+    &--dark {
+        color: $color-main;
+    }
+}
