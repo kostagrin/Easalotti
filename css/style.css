@@ -60,11 +60,13 @@ body {
   grid-column: 1 / 2; }
 
 .gallery__picture {
-  position: relative; }
+  position: relative;
+  background-color: #65182a; }
   .gallery__picture__img {
     display: block;
     max-width: 50vw;
-    width: 100%; }
+    width: 100%;
+    opacity: .3; }
   .gallery__picture__romb {
     position: absolute;
     top: 48.5%;

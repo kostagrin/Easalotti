@@ -59,12 +59,16 @@
 
     &__picture {
         position: relative;
+        // background-color: rgba($color-main, .702);
+        background-color: rgba($color-main, 1);
+
 
 
         &__img {
             display: block;
             max-width: 50vw;
             width: 100%;
+            opacity: .3;
         }
 
         &__romb {
