@@ -1,3 +1,5 @@
 /node_modules
 /css
 package-lock.json
+/sass/main.css.map
+/sass/main.css
