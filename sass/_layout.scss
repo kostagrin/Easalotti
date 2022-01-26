@@ -9,4 +9,14 @@
         display: grid;
         grid-template-columns: repeat(2, 50%);
     }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 74%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
