@@ -88,6 +88,15 @@
 
     &__text {
         grid-row: 1 / 2;
+        font-family: 'WeblySleek UI', sans-serif;
+
+        &__message {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__hr {
+        margin: 3rem auto;
     }
 }
 
