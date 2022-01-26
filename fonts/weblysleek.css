@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'WeblySleek UI';
+    src: local('WeblySleek UI Light'),
+        local('WeblySleekUILight'),
+        url('weblysleekuilight.woff2') format('woff2'),
+        url('weblysleekuilight.woff') format('woff'),
+        url('weblysleekuilight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WeblySleek UI';
+    src: local('WeblySleek UI Light Italic'),
+        local('WeblySleekUILight-Italic'),
+        url('weblysleekuilightitalic.woff2') format('woff2'),
+        url('weblysleekuilightitalic.woff') format('woff'), 
+        url('weblysleekuilightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WeblySleek UI';
+    src: local('WeblySleek UI Semilight'), 
+    local('WeblySleekUISemilight'), 
+    url('weblysleekuisemilight.woff2') format('woff2'), 
+    url('weblysleekuisemilight.woff') format('woff'), 
+    url('weblysleekuisemilight.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WeblySleek UI';
+    src: local('WeblySleek UI Semilight Italic'), 
+    local('WeblySleekUISemilight-Italic'), 
+    url('weblysleekuisemilightitalic.woff2') format('woff2'), 
+    url('weblysleekuisemilightitalic.woff') format('woff'), 
+    url('weblysleekuisemilightitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WeblySleek UI';
+    src: local('WeblySleek UI Semibold'), 
+    local('WeblySleekUISemibold'), 
+    url('weblysleekuisemibold.woff2') format('woff2'), 
+    url('weblysleekuisemibold.woff') format('woff'), 
+    url('weblysleekuisemibold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WeblySleek UI';
+    src: local('WeblySleek UI Semibold Italic'), 
+    local('WeblySleekUISemibold-Italic'), 
+    url('weblysleekuisemibolditalic.woff2') format('woff2'), 
+    url('weblysleekuisemibolditalic.woff') format('woff'), 
+    url('weblysleekuisemibolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
