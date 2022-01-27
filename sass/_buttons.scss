@@ -9,4 +9,9 @@
         background-color: transparent;
         border: 1px solid $color-main;
     }    
+
+    &--dark {
+        color: #fff;
+        background-color: $color-main;
+    }
 }

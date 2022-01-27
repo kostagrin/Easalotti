@@ -104,6 +104,14 @@
     background-image: url(../img/process-1.jpg);
     background-size: cover;
     background-position: center;
+    
+    &__btn {
+        margin: 10rem auto;
+    }
+
+    &__slider-marks-placeholder {
+        margin: 0 auto;
+    }
 }
 
 .book {
