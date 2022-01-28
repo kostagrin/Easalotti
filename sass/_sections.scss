@@ -124,6 +124,9 @@
 
 .book {
     background-image: url(../img/apply-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
 
     &__form {
         display: flex;
