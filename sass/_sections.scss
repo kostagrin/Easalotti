@@ -13,45 +13,53 @@
 
     &__row {
         &--1 {
-            & > * {
+            &>* {
                 &:first-child {
                     grid-column: 1 / 2;
                 }
+
                 &:last-child {
-                    grid-column: 2 / 3;;
+                    grid-column: 2 / 3;
+                    ;
                 }
             }
         }
-        
+
         &--2 {
-            & > * {
+            &>* {
                 &:first-child {
                     grid-column: 2 / 3;
                 }
+
                 &:last-child {
-                    grid-column: 1 / 2;;
+                    grid-column: 1 / 2;
+                    ;
                 }
             }
         }
-        
+
         &--3 {
-            & > * {
+            &>* {
                 &:first-child {
                     grid-column: 1 / 2;
                 }
+
                 &:last-child {
-                    grid-column: 2 / 3;;
+                    grid-column: 2 / 3;
+                    ;
                 }
             }
         }
-        
+
         &--4 {
-            & > * {
+            &>* {
                 &:first-child {
                     grid-column: 2 / 3;
                 }
+
                 &:last-child {
-                    grid-column: 1 / 2;;
+                    grid-column: 1 / 2;
+                    ;
                 }
             }
         }
@@ -104,7 +112,7 @@
     background-image: url(../img/process-1.jpg);
     background-size: cover;
     background-position: center;
-    
+
     &__btn {
         margin: 10rem auto;
     }
@@ -116,9 +124,28 @@
 
 .book {
     background-image: url(../img/apply-bg.jpg);
-  }
 
-  .footer {
-      background-color: $color-main;
-  }
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 57%;
+        border: 1px solid #fff;
+        padding: 3rem;
+
+            &__search {
+                flex-grow: 1;
+                margin-right: 3rem;
+                padding: 1rem;
+                border: none;
+                color: rgb(170, 170, 170);
+                font: 1.6rem 'WeblySleek UI', sans-serif;
+            }
+    }
+
+}
+
+.footer {
+    background-color: $color-main;
+}
   
