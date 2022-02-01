@@ -4,6 +4,13 @@
     grid-template-rows: 125vh 54.7rem 1fr repeat(3, 48.7rem);
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .gallery {
     &__row {
         display: grid;
