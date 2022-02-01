@@ -8,10 +8,24 @@
     font-size: 2rem;
 }
 
-.hr {
-    width: 50%;
-
-    &--dark {
-        color: $color-main;
+.h4 {
+    &--features {
+        font-size: 2.2rem;
+        font-weight: 300;
     }
 }
+
+.hr {
+    height: 1px;
+    border-width:0;
+
+    &--dark {
+        color: $color-secondary;
+        background-color: $color-secondary;
+    }
+
+    &--about {
+        width: 19rem;
+        margin: 6.3rem auto;
+    }
+} 
