@@ -15,6 +15,11 @@
     }
 }
 
+.h5 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
 .hr {
     height: 1px;
     border-width:0;
@@ -28,4 +33,8 @@
         width: 19rem;
         margin: 6.3rem auto;
     }
-} 
+}
+
+address {
+    font-style: normal;
+}
