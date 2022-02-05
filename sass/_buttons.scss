@@ -1,8 +1,13 @@
 .btn {
     text-transform: uppercase;
     text-decoration: none;
+    border: none;
     font-size: 1.6rem;
-    padding: 1rem 3.5rem;
+    font-weight: 300;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
     &--light {
         color: $color-main;
@@ -12,7 +17,22 @@
 
     &--dark {
         color: #fff;
-        background-color: $color-main;
+        background-color: $color-secondary;
         font-weight: 300;
+    }
+
+    &--main {
+        width: 23.5rem;
+        height: 4.8rem;
+    }
+
+    &--gallery {
+        width: 22.6rem;
+        height: 4.8rem;
+    }
+
+    &--submit {
+        width: 25rem;
+        height: 4.6rem;
     }
 }
