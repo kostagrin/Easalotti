@@ -5,7 +5,7 @@
 }
 
 .about {
-    background-color: rgb(103, 24, 43);
+    background-color: $color-main;
     color: #fff;   
 }
 
@@ -149,5 +149,24 @@
 
 .footer {
     background-color: $color-main;
+    color: #fff;
+
+    &__container {
+        margin-top: 4rem;
+        height: 80%;
+    }
+
+    &__gutter {
+        width: 1.5rem;
+        border-right: 1px solid $color-secondary;
+    }
+
+    &__h5 {
+        margin-bottom: 2.5rem;
+    }
+
+    &__btn {
+        margin: 2.3rem auto;
+    }
 }
   

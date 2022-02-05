@@ -38,3 +38,85 @@
         }
     }
 }
+
+.cat {
+    
+    &__item {
+        line-height: 1.7;
+    }
+    
+    &__link {
+        color: #fff;
+        cursor: pointer;
+        transition: all .2s;
+        text-decoration: none;
+        
+        &:link,
+        &:visited {
+            color: currentColor;
+            opacity: .7;
+        }
+
+        &:active,
+        &:hover {
+            text-decoration: underline;
+            opacity: 1;
+        }
+    }
+}
+
+// .address {
+//     &__metro {
+//     }
+//     &__office {
+//     }
+//     &__hours {
+//     }
+//     &__phone {
+//     }
+// }
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        width: 5rem;
+        height: 5rem;
+        background: #fff ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all .2s;
+
+        &:link,
+        &:visited {
+            color: $color-main;
+        }
+    
+        &:active,
+        &:hover {
+            background-color: $color-secondary;
+        }
+    }
+
+    &__link {
+        color: $color-main;
+
+        & i {
+            font-size: 3rem;
+        }
+    }
+}
+
+// .fab {
+// }
+// .fa-facebook-f {
+// }
+// .fa-instagram {
+// }
+// .fa-youtube {
+// }
+// .fa-skype {
+// }
