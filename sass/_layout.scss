@@ -4,6 +4,46 @@
     grid-template-rows: 125vh 54.7rem 1fr repeat(3, 48.7rem);
 }
 
+.home {
+    display: grid;
+    grid-template-areas: ". top top top top top top ."
+                         ". . . logo logo . . ."
+                         ". nav nav nav nav nav nav ."
+                         ". . . . . . h1 ."
+                         ". . . . . . btn ."
+                         ". . . dot dot . . ."
+                         ". . . shev shev . . .";
+    
+    &__top-bar {
+        grid-area: top;
+        color: #fff; //TEMP
+    }
+
+    &__logo {
+        grid-area: logo;
+    }
+
+    &__nav {
+        grid-area: nav;
+    }
+
+    &__text-header {
+        grid-area: h1;
+    }
+
+    &__btn {
+        grid-area: btn;
+    }
+
+    &__slider-marks-placeholder {
+        grid-area: dot;
+    }
+
+    &__shevron {
+        grid-area: shev;
+    }
+}
+
 .about {
     display: flex;
     flex-direction: column;
