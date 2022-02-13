@@ -8,6 +8,77 @@
         url(../img/home-1.jpg);
     background-position: center;
     background-size: cover;
+
+    &__logo {
+        display: grid;
+        grid-template-rows: minmax(min-content, max-content);
+        justify-content: center;
+        justify-items: center;
+    }
+
+    &__nav {
+        background-color: $color-main;
+    }
+
+    &__text-header {
+        margin-top: 10rem;
+        font-size: 8rem;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    &__btn {
+        margin-top: 1.8rem;
+        font-size: 2rem;
+        padding: 1.2rem 5rem;
+        // width: 235px;
+        // height: 48px;
+    }
+
+    &__slider {
+        margin-top: 10.5rem;
+    }
+
+    &__shevron {
+        background-color: $color-main;
+        margin: 6.6rem auto;
+        width: 55px;
+        height: 42px;
+    }
+
+    &__shevron-icon {
+        overflow: hidden;
+        display: inline-block;
+        background-image: url(../img/sprite.png);
+        background-position: -218px -84px;
+        width: 37px;
+        height: 26px;
+    }
+}
+
+
+.home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // &__item {
+    // }
+
+    &__link {
+        padding: .5rem 1.2rem;
+        text-decoration: none;
+        font-size: 2rem;
+        line-height: 4rem; //Should by twise of font-size. Do not use "%".
+        font-weight: 300;
+        color: #fff;
+        transition: all .2s;
+
+        &:hover {
+            opacity: .7;
+            background-color: $color-secondary;
+        }
+    }
 }
 
 .about {
@@ -125,9 +196,9 @@
         margin: 10rem auto;
     }
 
-    &__slider-marks-placeholder {
-        margin: 0 auto;
-    }
+    // &__slider {
+    //     margin: 0 auto;
+    // }
 }
 
 .book {
