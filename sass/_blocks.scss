@@ -1,3 +1,48 @@
+.top-bar {
+    &__form {
+        grid-column: 2 / 3;
+    }
+
+    &__form-input {
+        width: 100%;
+        height: 2.6rem;
+    }
+
+    &__open-hours {
+        grid-column: 3 / 4;
+        margin-left: 2.5rem;
+        font-weight: 300;
+    }
+
+    &__phone-img {
+        grid-column: 5 / 6;
+        background-image: url(..img/sprite.png);
+        width: 20px;
+        height: 20px;
+        position: relative;
+        z-index: 5;
+        background-position: -218px -10px;
+    }
+
+    &__phone-num {
+        grid-column: 6 / 7;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__btn {
+        grid-column: 7 / 8;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+}
+
 .logo {
     &__main {
         display: block;
@@ -7,9 +52,8 @@
     }
 
     &__sub {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 300;
-
         color: #fff;
     }
 }
@@ -37,7 +81,7 @@
         margin: 0 .7rem;
         cursor: pointer;
         opacity: .5;
-        
+
         &--active {
             opacity: 1;
         }

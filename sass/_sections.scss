@@ -9,6 +9,15 @@
     background-position: center;
     background-size: cover;
 
+
+    &__top-bar {
+        background-color: #000;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40rem repeat(2, 26.4rem) 1fr 1rem repeat(2, 15.4rem) 40rem;
+        align-content: center;   
+    }
+
     &__logo {
         display: grid;
         grid-template-rows: minmax(min-content, max-content);
@@ -28,9 +37,9 @@
     }
 
     &__btn {
-        margin-top: 1.8rem;
+        // margin-top: 1.8rem;
         font-size: 2rem;
-        padding: 1.2rem 5rem;
+        padding: 0 6rem;
         // width: 235px;
         // height: 48px;
     }
