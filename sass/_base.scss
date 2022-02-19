@@ -26,3 +26,15 @@ body {
 ul {
     list-style: none;
 }
+
+.row {
+    max-width: 114rem;
+    width: 100%;
+    margin: 0 auto;
+
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
