@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
   <link rel="stylesheet" href="sass/main.css" />
   <link rel="stylesheet" href="fonts/weblysleek.css" />
   <link rel="stylesheet" href="fonts/WeblySleek UI Light.css" />
@@ -14,24 +14,37 @@
 
 <body>
   <div class="site-container">
+    <!-- HOME #1 -->
     <section class="home">
-      <div class="home__top-bar top-bar">
-        <form class="top-bar__form">
-          <input class="top-bar__form-input" type="text" placeholder="Поиск товара...">
-        </form>
-        <p class="top-bar__open-hours">Ежедневно с 10:00 до 21:00</p>
-        <div class="top-bar__phone-img">&nbsp;</div>
-        <a href="tel:88007000000" class="top-bar__phone-num">
-          <span>8 800 700 00 00</span>
-        </a>
-        <button class="top-bar__btn">Заказать звонок</button>
+      <!-- TOP-BAR -->
+      <div class="home__top-bar">
+        <div class="row top-bar">
+          <form class="top-bar__form">
+            <input class="top-bar__form-input" type="text"
+              placeholder="Поиск товара...">
+              <button class="btn top-bar__btn--search">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            
+          </form>
+          <p class="top-bar__open-hours">Ежедневно с 10:00 до 21:00</p>
+          <div class="top-bar__phone-img">
+            <ion-icon name="call"></ion-icon>
+          </div>
+          <a href="tel:88007000000" class="top-bar__phone-num">
+            <span>8 800 700 00 00</span>
+          </a>
+          <button class="top-bar__btn">Заказать звонок</button>
+        </div>
+
       </div>
+      <!-- LOGO -->
       <div class="home__logo logo">
         <span class="logo__main">&nbsp;</span>
         <span class="logo__sub">Evrything about sofa</span>
       </div>
       <nav class="home__nav">
-        <ul class="home-nav">
+        <ul class="row home-nav">
           <li class="home-nav__item"><a href="#" class="home-nav__link">Кресло и
               диван</a></li>
           <li class="home-nav__item"><a href="#"
@@ -46,12 +59,16 @@
               партнёры</a></li>
         </ul>
       </nav>
-      <h1 class="home__text-header">
+      <!-- H1 HEADER -->
+      <h1 class="row home__text-header">
         <span>Скидки на</span><br>
         <span>коллекции</span><br>
         <span>от 20%</span>
       </h1>
-      <a href="#" class="btn btn--dark home__btn">Подробнее</a>
+
+      <div class="row">
+        <a href="#" class="btn btn--dark home__btn">Подробнее</a>
+      </div>
       <div class="home__slider slider">
         <ul class="slider__list slider__list--white" role="tablist">
           <li class="slider__item slider__item--active" role="presentation">
@@ -61,10 +78,11 @@
         </ul>
       </div>
       <button class="home__shevron">
-        <span class="home__shevron-icon">&nbsp;</span>
+        <span class="home__shevron--icon">&nbsp;</span>
       </button>
     </section>
 
+    <!-- ABOUT #2 -->
     <section class="about">
       <h3 class="h3 h3--light">Easalotti - роскошь для вашего дома</h3>
       <hr class="hr hr--dark hr--about" />
@@ -87,7 +105,8 @@
         </div>
       </div>
     </section>
-    <!-- GALLERY SECTION -->
+
+    <!-- GALLERY #3 -->
     <section class="gallery">
       <div class="gallery__row gallery__row--1">
         <div class="gallery__picture">
@@ -189,6 +208,8 @@
         </div>
       </div>
     </section>
+
+    <!-- PROCESS #4 -->
     <section class="process">
       <h3 class="h2">Процесс изготовления мебели</h3>
       <a href="#" class="btn btn--dark btn--gallery process__btn">Подробнее</a>
@@ -201,6 +222,8 @@
         </ul>
       </div>
     </section>
+
+    <!-- BOOK #5 -->
     <section class="book">
       <form class="book__form" action="/action_page.php">
         <input id="input" class="book__form__search" type="search"
@@ -209,6 +232,8 @@
         <a href="#" class="btn btn--dark btn--submit">Оставить заявку</a>
       </form>
     </section>
+
+    <!-- FOOTER #6 -->
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__col">
@@ -332,6 +357,10 @@
   </div>
   <script src="https://kit.fontawesome.com/ce61efd15f.js"
     crossorigin="anonymous"></script>
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
