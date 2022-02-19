@@ -1,57 +1,12 @@
 .site-container {
     display: grid;
-    // grid-template-rows: 125vh 54.7rem 1fr 48.7rem repeat(2, 48.7rem);
-    grid-template-rows: 125vh 54.7rem 1fr repeat(3, 48.7rem);
+    grid-template-rows: 108rem 54.7rem 1fr repeat(3, 48.7rem);
 }
 
 .home {
-    display: grid;
-    // grid-template-rows: 5.6rem 7.8rem min-content min-content 5rem 1.5rem 4rem;
-    grid-template-rows: repeat(7, min-content);
-    grid-row-gap: 3.8rem;
-    grid-template-columns: 20% repeat(6, 1fr) 20%;
-    grid-template-areas: ". top top top top top top ."
-                         ". . . logo logo . . ."
-                         "nav nav nav nav nav nav nav nav"
-                         ". . . . h1 h1 h1 ."
-                         ". . . . . . btn ."
-                         ". . . dot dot . . ."
-                         ". . . shev shev . . .";
-
-    
-
-                          
-
     &__top-bar {
-        grid-area: top;
-        color: #fff; //TEMP
-    }
-
-    &__logo {
-        grid-area: logo;
-    }
-
-    &__nav {
-        grid-area: nav;
-    }
-
-    &__text-header {
-        grid-area: h1;
-        line-height: 1;
-        // justify-self: end;
-        text-align: right;
-    }
-
-    &__btn {
-        grid-area: btn;
-    }
-
-    &__slider {
-        grid-area: dot;
-    }
-
-    &__shevron {
-        grid-area: shev;
+        height: 5.6rem;
+        margin-bottom: 3.8rem;
     }
 }
 
@@ -69,13 +24,7 @@
     }
 
     &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 74%;
-        text-align: center;
-        margin: 0 auto;
+        grid-row: 1 / 2;
     }
 }
 
