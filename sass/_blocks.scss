@@ -1,51 +1,58 @@
 .top-bar {
-    &__form {
-        grid-column: 2 / 3;
-    }
-
-    &__form-input {
-        width: 100%;
-        height: 2.6rem;
-    }
-
-    &__open-hours {
-        grid-column: 3 / 4;
-        margin-left: 2.5rem;
-        font-weight: 300;
-    }
-
-    &__phone-img {
-        grid-column: 5 / 6;
-        background-image: url(..img/sprite.png);
-        width: 20px;
-        height: 20px;
-        position: relative;
-        z-index: 5;
-        background-position: -218px -10px;
-    }
-
-    &__phone-num {
-        grid-column: 6 / 7;
-        display: inline-flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-right: 2rem;
-        text-decoration: none;
-        color: #fff;
-    }
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
 
     &__btn {
-        grid-column: 7 / 8;
         background-color: transparent;
         color: #fff;
         border: 1px solid #fff;
+        padding: .4rem 3rem;
         cursor: pointer;
+    }
+
+    &__open-hours {
+        margin: auto auto auto 2.5rem;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__form-input {
+        border: none;
+        width: 26.6rem;
+        height: 2.6rem;
+        padding-left: 1.2rem;
+    }
+
+    &__btn--search {
+        position: absolute;
+        right: 1rem;
+        top: 5px;
+        background-color: transparent;
+    }
+
+    &__open-hours {
+        font-size: 1.6rem;
+    }
+
+    &__phone-img {
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    &__phone-num {
+        text-decoration: none;
+        color: currentColor;
+        font-size: 1.6rem;
+        margin-right: 2rem;
     }
 }
 
 .logo {
     &__main {
-        display: block;
         background-image: url(../img/sprite.png);
         width: 20.6rem;
         height: 4.6rem;
@@ -55,6 +62,36 @@
         font-size: 2.2rem;
         font-weight: 300;
         color: #fff;
+    }
+}
+
+// HOME-NAV
+.home-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    &__item {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        ;
+        align-items: center;
+        flex: 1 1 fit-content;
+
+        &:hover {
+            background-color: $color-secondary;
+        }
+    }
+
+    &__link {
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 300;
     }
 }
 
