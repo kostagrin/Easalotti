@@ -5,11 +5,26 @@
     justify-content: space-between;
 
     &__btn {
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid #fff;
-        padding: .4rem 3rem;
         cursor: pointer;
+        transition: all 0.2s;
+
+        &:link,
+        &:visited {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: .4rem 3rem;
+        }
+        
+        &:hover {
+            padding: .405rem 3.1rem;
+            margin: 0 -0.1rem;
+        }
+        
+        &:active {
+            padding: .4rem 3rem;
+            margin: 0;
+        }
     }
 
     &__open-hours {
@@ -25,6 +40,11 @@
         width: 26.6rem;
         height: 2.6rem;
         padding-left: 1.2rem;
+        transition: width 0.4s ease-in-out;
+
+        &:focus {
+            width: 30rem;
+        }
     }
 
     &__btn--search {
