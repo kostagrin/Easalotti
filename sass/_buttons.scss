@@ -1,27 +1,113 @@
+/*
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+.section__btn - for positioning
+.btn--modifier - for styling
+
+.btn--home {
+  background-color: rgb(103, 24, 43);
+  width: 235px;
+  height: 48px;
+  left: 1293px;
+  top: 662px;
+}
+
+.btn--gallery {
+  border-width: 1px;
+  background-color: rgb(149, 43, 68);
+  border-color: rgb(149, 43, 68);
+  width: 228px;
+  height: 50px;
+}
+
+
+.btn--process {
+  background-color: rgb(149, 43, 68);
+  width: 226px;
+  height: 48px;
+  left: 842px;
+  top: 5705px;
+}
+
+.btn--submit {
+  background-color: rgb(149, 43, 68);
+  width: 249px;
+  height: 44px;
+  left: 1254px;
+  top: 6175px;
+}
+
+.btn--footer {
+  background-color: rgb(149, 43, 68);
+  width: 250px;
+  height: 47px;
+  left: 1254px;
+  top: 6649px;
+}
+
+
+*/
 .btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    font-size: 1.6rem;
-    font-weight: 300;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    transition: all .05s;
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 300;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 2rem;
+        box-shadow: 0;
+    }
+
+    &:hover,
+    &:active {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+        letter-spacing: .5px;
+        font-weight: normal;
+    }
+
+    &--outline {
+        color: $color-secondary;
+        background-color: transparent;
+        border: 1px solid $color-secondary;
+
+        &:hover {
+            color: #fff;
+            background-color: $color-secondary;
+            border: 1px solid $color-main;
+        }
+    }
 
     &--light {
-        color: $color-main;
-        background-color: transparent;
+        color: #fff;
+        background-color: $color-secondary;
         border: 1px solid $color-main;
-    }    
+
+        &:hover {
+            background-color: $color-main;
+            border: 1px solid #fff;
+        }
+    }
 
     &--dark {
         color: #fff;
-        background-color: $color-secondary;
-        font-weight: 300;
+        background-color: $color-main;
+        border: 1px solid $color-secondary-transparent;
+
+        &:hover {
+            background-color: $color-secondary-transparent;
+            border: 1px solid $color-shadow;
+        }
     }
 
-    &--main {
+    &--home {
         width: 23.5rem;
         height: 4.8rem;
     }
@@ -31,12 +117,25 @@
         height: 4.8rem;
     }
 
+    &--process {
+        width: 22.6rem;
+        height: 4.8rem;
+    }
+
     &--submit {
+        width: 24.9rem;
+        height: 4.4rem;
+    }
+
+    &--footer {
         width: 25rem;
-        height: 4.6rem;
+        height: 4.7rem;
     }
 }
 
 button {
     border: none;
+    font-size: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
 }
