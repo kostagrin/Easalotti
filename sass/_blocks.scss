@@ -1,3 +1,4 @@
+// top-bar__btn
 .top-bar {
     display: flex;
     height: 100%;
@@ -6,19 +7,17 @@
 
     &__btn {
         cursor: pointer;
-        transition: all 0.2s;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: .4rem 3rem;
+        font-weight: 300;
+        transition: all 0.1s ease-in-out;
 
-        &:link,
-        &:visited {
-            background-color: transparent;
-            color: #fff;
-            border: 1px solid #fff;
-            padding: .4rem 3rem;
-        }
         
         &:hover {
             padding: .405rem 3.1rem;
             margin: 0 -0.1rem;
+            background-color: rgb(97, 97, 97);
         }
         
         &:active {
