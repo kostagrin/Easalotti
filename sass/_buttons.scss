@@ -51,11 +51,11 @@ a:active - a link the moment it is clicked
 
 */
 .btn {
-    transition: all .05s;
+    transition: all .1s ease-in-out;
+    text-transform: uppercase;
 
     &:link,
     &:visited {
-        text-transform: uppercase;
         text-decoration: none;
         font-weight: 300;
         display: inline-flex;
@@ -136,6 +136,5 @@ a:active - a link the moment it is clicked
 button {
     border: none;
     font-size: inherit;
-    text-transform: uppercase;
-    cursor: pointer;
+    background-color: transparent;
 }
