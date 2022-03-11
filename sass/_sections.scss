@@ -128,15 +128,21 @@
 
     &__picture {
         position: relative;
-        // background-color: rgba($color-main, .702);
-        background-color: rgba($color-main, 1);
-
-
+        overflow: hidden;
+        background-color: rgba($color-main, .7);
+        
+        
         &__img {
             display: block;
             max-width: 50vw;
             width: 100%;
-            opacity: .3;
+            opacity: .6;
+            transition: all .4s ease-in-out;
+            
+            &:hover {
+                opacity: .8;
+                transform: scale(1.03);
+            }
         }
 
         &__romb {
