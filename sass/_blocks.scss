@@ -91,26 +91,35 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-
+    
     &__item {
         height: 100%;
         display: flex;
         justify-content: center;
-        ;
         align-items: center;
         flex: 1 1 fit-content;
-
+        transition: all .2s;
+        
         &:hover {
             background-color: $color-secondary;
         }
     }
-
+    
     &__link {
-        background-color: transparent;
-        color: #fff;
-        text-decoration: none;
-        font-size: 2rem;
-        font-weight: 300;
+        transition: all .2s;
+        &:link,
+        &:visited {
+            background-color: transparent;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        &:hover,
+        &:active {
+            padding-bottom: 5px;
+        }
     }
 }
 
