@@ -106,7 +106,10 @@
     }
     
     &__link {
+        position: relative;
+        top: 1rem;
         transition: all .2s;
+
         &:link,
         &:visited {
             background-color: transparent;
@@ -115,11 +118,19 @@
             font-size: 2rem;
             font-weight: 300;
         }
-
+        
         &:hover,
         &:active {
             padding-bottom: 5px;
         }
+
+        &::after {
+            display: inline-block;
+            content: "";
+            width: 100%;
+            height: 100%;
+        }
+
     }
 }
 
