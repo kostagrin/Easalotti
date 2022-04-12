@@ -200,7 +200,8 @@ ul {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: all .2s; }
+    transition: all .2s;
+    cursor: pointer; }
     .social-links__item:link, .social-links__item:visited {
       color: #67182b; }
     .social-links__item:active, .social-links__item:hover {
@@ -259,12 +260,11 @@ a:active - a link the moment it is clicked
   left: 1254px;
   top: 6649px;
 }
-
-
 */
 .btn {
   transition: all .1s ease-in-out;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
   .btn:link, .btn:visited {
     text-decoration: none;
     font-weight: 300;

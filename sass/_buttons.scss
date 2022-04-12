@@ -47,12 +47,12 @@ a:active - a link the moment it is clicked
   left: 1254px;
   top: 6649px;
 }
-
-
 */
+
 .btn {
     transition: all .1s ease-in-out;
     text-transform: uppercase;
+    cursor: pointer;
 
     &:link,
     &:visited {

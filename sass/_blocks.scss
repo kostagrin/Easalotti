@@ -245,7 +245,7 @@
 .social-links {
     display: flex;
     justify-content: space-between;
-
+    
     &__item {
         width: 5rem;
         height: 5rem;
@@ -255,18 +255,19 @@
         align-items: center;
         border-radius: 50%;
         transition: all .2s;
+        cursor: pointer;
 
         &:link,
         &:visited {
             color: $color-main;
         }
-
+        
         &:active,
         &:hover {
             background-color: $color-secondary;
         }
     }
-
+    
     &__link {
         color: $color-main;
 
