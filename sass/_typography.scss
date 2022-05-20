@@ -16,6 +16,14 @@
     &--features {
         font-size: 2.2rem;
         font-weight: 300;
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: 984px) {
+           font-size: 1.8rem;;
+        }
     }
 }
 
@@ -26,6 +34,10 @@
     // @media screen and (max-width: 1824px) {
     //     font-size: 95%;
     // }
+
+    @media only screen and (max-width: 1780px) {
+        font-size: 95%;
+    }
 }
 
 .hr {

@@ -32,10 +32,15 @@ ul {
     width: 100%;
     margin: 0 auto;
 
+    
     &::after {
         display: block;
         content: "";
         clear: both;
+    }
+   
+    @media only screen and (max-width: 1180px) {
+        width: 95%;
     }
 }
 

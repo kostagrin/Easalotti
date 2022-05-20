@@ -47,9 +47,14 @@
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(9, minmax(3rem, max-content));
+        // grid-template-columns: repeat(9, minmax(3rem, max-content));
+        grid-template-columns: repeat(8, minmax(3rem, max-content)) minmax(4.5rem, max-content);
         grid-template-rows: minmax(min-content, max-content);
         justify-content: space-between;
         width: 57vw;
+
+        @media only screen and (max-width: 1200px) {
+            width: 70vw;
+        }
     }
 }

@@ -38,6 +38,14 @@
         & span:first-child {
             letter-spacing: 1.35px;
         }
+
+        @media only screen and (max-width: 1180px) {
+            font-size: 7rem;;
+        }
+
+        @media only screen and (max-width: 984px) {
+            font-size: 6rem;;
+         }
     }
 
     &__btn {
@@ -229,6 +237,14 @@
             color: rgb(170, 170, 170);
             font: 1.6rem 'WeblySleek UI', sans-serif;
         }
+
+        @media only screen and (max-width: 1200px) {
+            width: 65%;
+        }
+        
+        @media only screen and (max-width: 984px) {
+            width: 72%;
+         }
     }
 
 }
@@ -254,4 +270,8 @@
     &__btn {
         margin: 2.3rem auto;
     }
+
+    // @media only screen and (max-width: 1780px) {
+    //     font-size: 95%;
+    // }
 }

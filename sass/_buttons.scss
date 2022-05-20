@@ -64,6 +64,10 @@ a:active - a link the moment it is clicked
         cursor: pointer;
         font-size: 2rem;
         box-shadow: 0;
+
+        // @media only screen and (max-width: 1780px) {
+        //     font-size: 95%;
+        // }
     }
 
     &:hover,
@@ -110,26 +114,73 @@ a:active - a link the moment it is clicked
     &--home {
         width: 23.5rem;
         height: 4.8rem;
-    }
 
+        @media only screen and (max-width: 1180px) {
+            width: 21rem;
+            font-size: 1.8rem !important;
+        }
+        
+        @media only screen and (max-width: 984px) {
+            width: 18rem;
+         }
+        }
+    
     &--gallery {
         width: 22.6rem;
         height: 4.8rem;
-    }
+        
+        @media only screen and (max-width: 1180px) {
+            width: 21rem;
+            font-size: 1.8rem !important;
+        }
 
+        @media only screen and (max-width: 984px) {
+            width: 18rem;
+         }
+    }
+    
     &--process {
         width: 22.6rem;
         height: 4.8rem;
+        
+        @media only screen and (max-width: 1180px) {
+            width: 21rem;
+            font-size: 1.8rem !important;
+        }
+
+        @media only screen and (max-width: 984px) {
+            width: 18rem;
+         }
     }
 
     &--submit {
         width: 24.9rem;
         height: 4.4rem;
-    }
+        
+        @media only screen and (max-width: 1780px) {
+            font-size: 95%;
+            width: 21rem;
+        }
 
+        @media only screen and (max-width: 1200px) {
+            width: 20rem;
+        }
+
+    }
+    
     &--footer {
         width: 25rem;
         height: 4.7rem;
+        
+        @media only screen and (max-width: 1780px) {
+            font-size: 95%;
+            width: 23rem;
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            font-size: 80%;
+            width: 20rem;
+        }
     }
 }
 

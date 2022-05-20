@@ -67,7 +67,19 @@
         color: currentColor;
         font-size: 1.6rem;
         margin-right: 2rem;
+  
+        @media only screen and(max-width: 1024px) {
+            font-size: 1.4rem;
+        }
     }
+    
+    @media only screen and(max-width: 1024px) {
+        font-size: 1.4rem !important;
+    }
+
+    @media only screen and (max-width: 984px) {
+        font-size: 1.2rem !important;
+     }
 }
 
 .logo {
@@ -117,6 +129,18 @@
             text-decoration: none;
             font-size: 2rem;
             font-weight: 300;
+
+            @media only screen and (max-width: 1200px) {
+                font-size: 1.8rem;
+            }
+
+            @media only screen and(max-width: 1024px) {
+                font-size: 1.7rem;
+            }
+
+            @media only screen and (max-width: 984px) {
+                font-size: 1.6rem;;
+             }
         }
         
         &:hover,
@@ -245,6 +269,7 @@
 .social-links {
     display: flex;
     justify-content: space-between;
+    width: 25rem;
     
     &__item {
         width: 5rem;
@@ -266,6 +291,16 @@
         &:hover {
             background-color: $color-secondary;
         }
+
+        @media only screen and (max-width: 1780px) {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            width: 4rem;
+            height: 4rem;
+        }
     }
     
     &__link {
@@ -273,7 +308,23 @@
 
         & i {
             font-size: 3rem;
+            
+            @media only screen and (max-width: 1780px) {
+                font-size: 2.5rem;
+            }
+           
+            @media only screen and (max-width: 1200px) {
+                font-size: 2rem;
+            }
         }
+    }
+
+    @media only screen and (max-width: 1780px) {
+        width: 23rem;
+    }
+    
+    @media only screen and (max-width: 1780px) {
+        width: 20rem;
     }
 }
 

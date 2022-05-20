@@ -30,6 +30,9 @@ ul {
     display: block;
     content: "";
     clear: both; }
+  @media only screen and (max-width: 1180px) {
+    .row {
+      width: 95%; } }
 
 /*
 320px — 480px: Mobile devices.
@@ -84,6 +87,15 @@ ul {
     color: currentColor;
     font-size: 1.6rem;
     margin-right: 2rem; }
+    @media only screen and (max-width: 1024px) {
+      .top-bar__phone-num {
+        font-size: 1.4rem; } }
+  @media only screen and (max-width: 1024px) {
+    .top-bar {
+      font-size: 1.4rem !important; } }
+  @media only screen and (max-width: 984px) {
+    .top-bar {
+      font-size: 1.2rem !important; } }
 
 .logo__main {
   background-image: url(../img/sprite.png);
@@ -120,6 +132,15 @@ ul {
       text-decoration: none;
       font-size: 2rem;
       font-weight: 300; }
+      @media only screen and (max-width: 1200px) {
+        .home-nav__link:link, .home-nav__link:visited {
+          font-size: 1.8rem; } }
+      @media only screen and (max-width: 1024px) {
+        .home-nav__link:link, .home-nav__link:visited {
+          font-size: 1.7rem; } }
+      @media only screen and (max-width: 984px) {
+        .home-nav__link:link, .home-nav__link:visited {
+          font-size: 1.6rem; } }
     .home-nav__link:hover, .home-nav__link:active {
       padding-bottom: 5px; }
     .home-nav__link::after {
@@ -191,7 +212,8 @@ ul {
 
 .social-links {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 25rem; }
   .social-links__item {
     width: 5rem;
     height: 5rem;
@@ -206,10 +228,30 @@ ul {
       color: #67182b; }
     .social-links__item:active, .social-links__item:hover {
       background-color: #952b44; }
+    @media only screen and (max-width: 1780px) {
+      .social-links__item {
+        width: 4.5rem;
+        height: 4.5rem; } }
+    @media only screen and (max-width: 1200px) {
+      .social-links__item {
+        width: 4rem;
+        height: 4rem; } }
   .social-links__link {
     color: #67182b; }
     .social-links__link i {
       font-size: 3rem; }
+      @media only screen and (max-width: 1780px) {
+        .social-links__link i {
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 1200px) {
+        .social-links__link i {
+          font-size: 2rem; } }
+  @media only screen and (max-width: 1780px) {
+    .social-links {
+      width: 23rem; } }
+  @media only screen and (max-width: 1780px) {
+    .social-links {
+      width: 20rem; } }
 
 /*
 a:link - a normal, unvisited link
@@ -303,18 +345,54 @@ a:active - a link the moment it is clicked
   .btn--home {
     width: 23.5rem;
     height: 4.8rem; }
+    @media only screen and (max-width: 1180px) {
+      .btn--home {
+        width: 21rem;
+        font-size: 1.8rem !important; } }
+    @media only screen and (max-width: 984px) {
+      .btn--home {
+        width: 18rem; } }
   .btn--gallery {
     width: 22.6rem;
     height: 4.8rem; }
+    @media only screen and (max-width: 1180px) {
+      .btn--gallery {
+        width: 21rem;
+        font-size: 1.8rem !important; } }
+    @media only screen and (max-width: 984px) {
+      .btn--gallery {
+        width: 18rem; } }
   .btn--process {
     width: 22.6rem;
     height: 4.8rem; }
+    @media only screen and (max-width: 1180px) {
+      .btn--process {
+        width: 21rem;
+        font-size: 1.8rem !important; } }
+    @media only screen and (max-width: 984px) {
+      .btn--process {
+        width: 18rem; } }
   .btn--submit {
     width: 24.9rem;
     height: 4.4rem; }
+    @media only screen and (max-width: 1780px) {
+      .btn--submit {
+        font-size: 95%;
+        width: 21rem; } }
+    @media only screen and (max-width: 1200px) {
+      .btn--submit {
+        width: 20rem; } }
   .btn--footer {
     width: 25rem;
     height: 4.7rem; }
+    @media only screen and (max-width: 1780px) {
+      .btn--footer {
+        font-size: 95%;
+        width: 23rem; } }
+    @media only screen and (max-width: 1200px) {
+      .btn--footer {
+        font-size: 80%;
+        width: 20rem; } }
 
 button {
   border: none;
@@ -358,10 +436,13 @@ button {
   justify-content: center; }
   .footer__container {
     display: grid;
-    grid-template-columns: repeat(9, minmax(3rem, max-content));
+    grid-template-columns: repeat(8, minmax(3rem, max-content)) minmax(4.5rem, max-content);
     grid-template-rows: minmax(min-content, max-content);
     justify-content: space-between;
     width: 57vw; }
+    @media only screen and (max-width: 1200px) {
+      .footer__container {
+        width: 70vw; } }
 
 .home {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.jpg);
@@ -387,6 +468,12 @@ button {
     color: #fff; }
     .home__text-header span:first-child {
       letter-spacing: 1.35px; }
+    @media only screen and (max-width: 1180px) {
+      .home__text-header {
+        font-size: 7rem; } }
+    @media only screen and (max-width: 984px) {
+      .home__text-header {
+        font-size: 6rem; } }
   .home__btn {
     float: right;
     margin-bottom: 10.5rem; }
@@ -507,6 +594,12 @@ button {
       border: none;
       color: #aaaaaa;
       font: 1.6rem 'WeblySleek UI', sans-serif; }
+    @media only screen and (max-width: 1200px) {
+      .book__form {
+        width: 65%; } }
+    @media only screen and (max-width: 984px) {
+      .book__form {
+        width: 72%; } }
 
 .footer {
   background-color: #67182b;
@@ -535,10 +628,19 @@ button {
 .h4--features {
   font-size: 2.2rem;
   font-weight: 300; }
+  @media only screen and (max-width: 1200px) {
+    .h4--features {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 984px) {
+    .h4--features {
+      font-size: 1.8rem; } }
 
 .h5 {
   font-size: 1.8rem;
   font-weight: 400; }
+  @media only screen and (max-width: 1780px) {
+    .h5 {
+      font-size: 95%; } }
 
 .hr {
   height: 1px;
