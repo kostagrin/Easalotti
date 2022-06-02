@@ -149,6 +149,27 @@ ul {
       width: 100%;
       height: 100%; }
 
+.dots {
+  height: 1.2rem;
+  display: flex;
+  justify-content: center; }
+  .dots--white .dot {
+    background-color: #fff; }
+  .dots--colored .dot {
+    background-color: #67182b; }
+
+.dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  margin: 0 .7rem;
+  cursor: pointer;
+  opacity: .5;
+  transition: opacity 0.3s ease-out; }
+
+.dot.active {
+  opacity: 1; }
+
 .slider__list {
   display: flex;
   justify-content: center; }
@@ -401,11 +422,31 @@ button {
 
 .site-container {
   display: grid;
-  grid-template-rows: 108rem 54.7rem 1fr repeat(3, 48.7rem); }
+  grid-template-rows: repeat(2, auto) 1fr repeat(3, 48.7rem); }
 
-.home__top-bar {
-  height: 5.6rem;
-  margin-bottom: 3.8rem; }
+.home {
+  display: grid;
+  grid-template: auto / auto; }
+  .home__top-bar {
+    height: 5.6rem;
+    margin-bottom: 3.8rem; }
+
+.bg-img {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+  transition: opacity .8s ease-out;
+  opacity: 0; }
+
+.bg-img.active {
+  opacity: 1; }
+
+.bg-inner {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  position: relative;
+  z-index: 1; }
 
 .about {
   display: flex;
@@ -445,7 +486,7 @@ button {
         width: 70vw; } }
 
 .home {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%), url(../img/home-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0) 100%);
   background-position: center;
   background-size: cover; }
   .home__top-bar {

@@ -4,9 +4,8 @@
             rgba(0, 0, 0, .7) 0%,
             rgba(0, 0, 0, .3) 25%,
             rgba(0, 0, 0, .1) 50%,
-            rgba(0, 0, 0, 0) 75%,
-            rgba(0, 0, 0, 0) 100%),
-        url(../img/home-1.jpg);
+            rgba(0, 0, 0, 0.05) 75%,
+            rgba(0, 0, 0, 0) 100%);
     background-position: center;
     background-size: cover;
 
@@ -40,20 +39,21 @@
         }
 
         @media only screen and (max-width: 1180px) {
-            font-size: 7rem;;
+            font-size: 7rem;
+            ;
         }
 
         @media only screen and (max-width: 984px) {
-            font-size: 6rem;;
-         }
+            font-size: 6rem;
+            ;
+        }
     }
 
     &__btn {
         float: right;
         margin-bottom: 10.5rem;
     }
-
-    // &__slider {}
+   
 
     &__shevron {
         display: block;
@@ -241,10 +241,10 @@
         @media only screen and (max-width: 1200px) {
             width: 65%;
         }
-        
+
         @media only screen and (max-width: 984px) {
             width: 72%;
-         }
+        }
     }
 
 }

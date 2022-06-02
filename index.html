@@ -9,6 +9,7 @@
   <!-- <link rel="stylesheet" href="sass/main.css" /> -->
   <link rel="stylesheet" href="fonts/weblysleek.css" />
   <link rel="stylesheet" href="fonts/WeblySleek UI Light.css" />
+  <script defer src="./js/slider.js"></script>
   <title>Easalotti</title>
 </head>
 
@@ -16,70 +17,88 @@
   <div class="site-container">
     <!-- HOME #1 -->
     <section class="home">
-      <!-- TOP-BAR -->
-      <div class="home__top-bar">
-        <div class="row top-bar">
-          <form class="top-bar__form">
-            <input class="top-bar__form-input" type="text"
-              placeholder="Поиск товара...">
-              <button class="top-bar__btn--search">
-                <ion-icon name="search-outline"></ion-icon>
-              </button>
-            
-          </form>
-          <p class="top-bar__open-hours">Ежедневно с 10:00 до 21:00</p>
-          <div class="top-bar__phone-img">
-            <ion-icon name="call"></ion-icon>
+
+        <img class="bg-img active" src="./img/hero-1.jpg" alt="hero-1"
+          data-img-slide="0" />
+        <img class="bg-img" src="./img/hero-2.jpg" alt="hero-2"
+          data-img-slide="1" />
+        <img class="bg-img" src="./img/hero-3.jpg" alt="hero-3"
+          data-img-slide="2" />
+        <div class="bg-inner">
+          <!-- TOP-BAR -->
+          <div class="home__top-bar">
+            <div class="row top-bar">
+              <form class="top-bar__form">
+                <input class="top-bar__form-input" type="text"
+                  placeholder="Поиск товара...">
+                <button class="top-bar__btn--search">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+
+              </form>
+              <p class="top-bar__open-hours">Ежедневно с 10:00 до 21:00</p>
+              <div class="top-bar__phone-img">
+                <ion-icon name="call"></ion-icon>
+              </div>
+              <a href="tel:88007000000" class="top-bar__phone-num">
+                <span>8 800 700 00 00</span>
+              </a>
+              <button class="top-bar__btn">Заказать звонок</button>
+            </div>
+
           </div>
-          <a href="tel:88007000000" class="top-bar__phone-num">
-            <span>8 800 700 00 00</span>
+          <!-- LOGO -->
+          <div class="home__logo logo">
+            <span class="logo__main">&nbsp;</span>
+            <span class="logo__sub">Evrything about sofa</span>
+          </div>
+          <nav class="home__nav">
+            <ul class="row home-nav">
+              <li class="home-nav__item"><a href="#"
+                  class="home-nav__link">Кресло и
+                  диван</a></li>
+              <li class="home-nav__item"><a href="#"
+                  class="home-nav__link">Светильники и аксессуары</a></li>
+              <li class="home-nav__item"><a href="#"
+                  class="home-nav__link">Спальные
+                  гарнитуры</a></li>
+              <li class="home-nav__item"><a href="#"
+                  class="home-nav__link">Гостиные
+                  и столовые</a></li>
+              <li class="home-nav__item"><a href="#"
+                  class="home-nav__link">Коллекции</a></li>
+              <li class="home-nav__item"><a href="#" class="home-nav__link">Наша
+                  партнёры</a></li>
+            </ul>
+          </nav>
+          <!-- H1 HEADER -->
+          <h1 class="row home__text-header">
+            <span>Скидки на</span><br>
+            <span>коллекции</span><br>
+            <span>от 20%</span>
+          </h1>
+
+          <div class="row">
+            <a href="#" class="btn btn--dark btn--home home__btn">Подробнее</a>
+          </div>
+          <!-- <div class="home__slider slider">
+            <ul class="slider__list slider__list--white" role="tablist">
+              <li class="slider__item slider__item--active" role="presentation">
+              </li>
+              <li class="slider__item" role="presentation"></li>
+              <li class="slider__item" role="presentation"></li>
+            </ul>
+          </div> -->
+          <div class="home__dots dots dots--white">
+            <button class="dot home__dot active" type="button" data-bg-dot="0"></button>
+            <button class="dot home__dot" type="button" data-bg-dot="1"></button>
+            <button class="dot home__dot" type="button" data-bg-dot="2"></button>
+          </div>
+          <a href="#" class="home__shevron">
+            <span class="home__shevron--icon">&nbsp;</span>
           </a>
-          <button class="top-bar__btn">Заказать звонок</button>
         </div>
-
-      </div>
-      <!-- LOGO -->
-      <div class="home__logo logo">
-        <span class="logo__main">&nbsp;</span>
-        <span class="logo__sub">Evrything about sofa</span>
-      </div>
-      <nav class="home__nav">
-        <ul class="row home-nav">
-          <li class="home-nav__item"><a href="#" class="home-nav__link">Кресло и
-              диван</a></li>
-          <li class="home-nav__item"><a href="#"
-              class="home-nav__link">Светильники и аксессуары</a></li>
-          <li class="home-nav__item"><a href="#" class="home-nav__link">Спальные
-              гарнитуры</a></li>
-          <li class="home-nav__item"><a href="#" class="home-nav__link">Гостиные
-              и столовые</a></li>
-          <li class="home-nav__item"><a href="#"
-              class="home-nav__link">Коллекции</a></li>
-          <li class="home-nav__item"><a href="#" class="home-nav__link">Наша
-              партнёры</a></li>
-        </ul>
-      </nav>
-      <!-- H1 HEADER -->
-      <h1 class="row home__text-header">
-        <span>Скидки на</span><br>
-        <span>коллекции</span><br>
-        <span>от 20%</span>
-      </h1>
-
-      <div class="row">
-        <a href="#" class="btn btn--dark btn--home home__btn">Подробнее</a>
-      </div>
-      <div class="home__slider slider">
-        <ul class="slider__list slider__list--white" role="tablist">
-          <li class="slider__item slider__item--active" role="presentation">
-          </li>
-          <li class="slider__item" role="presentation"></li>
-          <li class="slider__item" role="presentation"></li>
-        </ul>
-      </div>
-      <a href="#" class="home__shevron">
-        <span class="home__shevron--icon">&nbsp;</span>
-      </a>
+      
     </section>
 
     <!-- ABOUT #2 -->
@@ -229,7 +248,8 @@
         <input id="input" class="book__form__search" type="search"
           autocomplete="off" spellcheck="false" role="combobox"
           aria-live="polite" placeholder="Введите номер телефона..." />
-        <button class="btn btn--light btn--submit" type="button">Оставить заявку</button>
+        <button class="btn btn--light btn--submit" type="button">Оставить
+          заявку</button>
       </form>
     </section>
 
@@ -363,4 +383,5 @@
   <script nomodule
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

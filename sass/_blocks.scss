@@ -13,13 +13,13 @@
         font-weight: 300;
         transition: all 0.1s ease-in-out;
 
-        
+
         &:hover {
             padding: .405rem 3.1rem;
             margin: 0 -0.1rem;
             background-color: rgb(97, 97, 97);
         }
-        
+
         &:active {
             padding: .4rem 3rem;
             margin: 0;
@@ -67,19 +67,19 @@
         color: currentColor;
         font-size: 1.6rem;
         margin-right: 2rem;
-  
+
         @media only screen and(max-width: 1024px) {
             font-size: 1.4rem;
         }
     }
-    
+
     @media only screen and(max-width: 1024px) {
         font-size: 1.4rem !important;
     }
 
     @media only screen and (max-width: 984px) {
         font-size: 1.2rem !important;
-     }
+    }
 }
 
 .logo {
@@ -103,7 +103,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    
+
     &__item {
         height: 100%;
         display: flex;
@@ -111,12 +111,12 @@
         align-items: center;
         flex: 1 1 fit-content;
         transition: all .2s;
-        
+
         &:hover {
             background-color: $color-secondary;
         }
     }
-    
+
     &__link {
         position: relative;
         top: 1rem;
@@ -139,10 +139,11 @@
             }
 
             @media only screen and (max-width: 984px) {
-                font-size: 1.6rem;;
-             }
+                font-size: 1.6rem;
+                ;
+            }
         }
-        
+
         &:hover,
         &:active {
             padding-bottom: 5px;
@@ -159,6 +160,34 @@
 }
 
 // SLIDER
+.dots {
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+
+    &--white .dot {
+        background-color: #fff;
+    }
+
+    &--colored .dot {
+        background-color: $color-main;
+    }
+}
+
+.dot {   
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin: 0 .7rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity 0.3s ease-out;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
 .slider {
 
     &__list {
@@ -270,7 +299,7 @@
     display: flex;
     justify-content: space-between;
     width: 25rem;
-    
+
     &__item {
         width: 5rem;
         height: 5rem;
@@ -286,7 +315,7 @@
         &:visited {
             color: $color-main;
         }
-        
+
         &:active,
         &:hover {
             background-color: $color-secondary;
@@ -296,23 +325,23 @@
             width: 4.5rem;
             height: 4.5rem;
         }
-        
+
         @media only screen and (max-width: 1200px) {
             width: 4rem;
             height: 4rem;
         }
     }
-    
+
     &__link {
         color: $color-main;
 
         & i {
             font-size: 3rem;
-            
+
             @media only screen and (max-width: 1780px) {
                 font-size: 2.5rem;
             }
-           
+
             @media only screen and (max-width: 1200px) {
                 font-size: 2rem;
             }
@@ -322,7 +351,7 @@
     @media only screen and (max-width: 1780px) {
         width: 23rem;
     }
-    
+
     @media only screen and (max-width: 1780px) {
         width: 20rem;
     }
