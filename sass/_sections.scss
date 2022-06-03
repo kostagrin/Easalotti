@@ -8,6 +8,7 @@
             rgba(0, 0, 0, 0) 100%);
     background-position: center;
     background-size: cover;
+    position: relative;
 
     &__top-bar {
         color: #fff; //TEMP
@@ -51,13 +52,16 @@
 
     &__btn {
         float: right;
-        margin-bottom: 10.5rem;
+        // margin-bottom: 10.5rem;
     }
    
 
     &__shevron {
         display: block;
-        margin: 6.6rem auto;
+        // margin: 6.6rem auto;
+        position: absolute;
+        @include adjust-horizontally;
+        bottom: 19%;
         width: 55px;
         height: 42px;
         background-color: $color-main;
@@ -80,6 +84,12 @@
                 transform: translate(-50%, -40%);
             }
         }
+    }
+
+    &__dots {
+        position: absolute;
+        @include adjust-horizontally;
+        bottom: 26%;
     }
 }
 
