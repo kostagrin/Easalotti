@@ -52,7 +52,7 @@ ul {
     border: 1px solid #fff;
     padding: .4rem 3rem;
     font-weight: 300;
-    transition: all 0.1s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .top-bar__btn:hover {
       padding: .405rem 3.1rem;
       margin: 0 -0.1rem;
@@ -125,7 +125,7 @@ ul {
   .home-nav__link {
     position: relative;
     top: 1rem;
-    transition: all .2s; }
+    transition: all .3s; }
     .home-nav__link:link, .home-nav__link:visited {
       background-color: transparent;
       color: #fff;
@@ -150,7 +150,6 @@ ul {
       height: 100%; }
 
 .dots {
-  height: 1.2rem;
   display: flex;
   justify-content: center; }
   .dots--white .dot {
@@ -169,24 +168,6 @@ ul {
 
 .dot.active {
   opacity: 1; }
-
-.slider__list {
-  display: flex;
-  justify-content: center; }
-  .slider__list--white li {
-    background-color: #fff; }
-  .slider__list--colored li {
-    background-color: #67182b; }
-
-.slider__item {
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 50%;
-  margin: 0 .7rem;
-  cursor: pointer;
-  opacity: .5; }
-  .slider__item--active {
-    opacity: 1; }
 
 .features {
   display: flex;
@@ -325,7 +306,7 @@ a:active - a link the moment it is clicked
 }
 */
 .btn {
-  transition: all .1s ease-in-out;
+  transition: all .3s ease-in-out;
   text-transform: uppercase;
   cursor: pointer; }
   .btn:link, .btn:visited {
@@ -422,7 +403,7 @@ button {
 
 .site-container {
   display: grid;
-  grid-template-rows: repeat(2, auto) 1fr repeat(3, 48.7rem); }
+  grid-template-rows: auto 54.7rem 1fr repeat(3, 48.7rem); }
 
 .home {
   display: grid;
@@ -430,23 +411,20 @@ button {
   .home__top-bar {
     height: 5.6rem;
     margin-bottom: 3.8rem; }
-
-.bg-img {
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
-  width: 100%;
-  height: auto;
-  transition: opacity .8s ease-out;
-  opacity: 0; }
-
-.bg-img.active {
-  opacity: 1; }
-
-.bg-inner {
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
-  position: relative;
-  z-index: 1; }
+  .home__bg-img {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.8s ease-out;
+    opacity: 0; }
+    .home__bg-img.active {
+      opacity: 1; }
+  .home__bg-inner {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    position: relative;
+    z-index: 1; }
 
 .about {
   display: flex;
@@ -488,7 +466,8 @@ button {
 .home {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0) 100%);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .home__top-bar {
     color: #fff;
     background-color: #000; }
@@ -516,11 +495,13 @@ button {
       .home__text-header {
         font-size: 6rem; } }
   .home__btn {
-    float: right;
-    margin-bottom: 10.5rem; }
+    float: right; }
   .home__shevron {
     display: block;
-    margin: 6.6rem auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 19%;
     width: 55px;
     height: 42px;
     background-color: #67182b;
@@ -539,6 +520,11 @@ button {
       transition: all .2s; }
       .home__shevron--icon:hover {
         transform: translate(-50%, -40%); }
+  .home__dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 26%; }
 
 .about {
   background-color: #67182b;

@@ -11,7 +11,7 @@
         border: 1px solid #fff;
         padding: .4rem 3rem;
         font-weight: 300;
-        transition: all 0.1s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
 
         &:hover {
@@ -120,7 +120,7 @@
     &__link {
         position: relative;
         top: 1rem;
-        transition: all .2s;
+        transition: all .3s;
 
         &:link,
         &:visited {
@@ -159,9 +159,8 @@
     }
 }
 
-// SLIDER
+// SLIDER DOTS
 .dots {
-    height: 1.2rem;
     display: flex;
     justify-content: center;
 
@@ -188,34 +187,34 @@
     opacity: 1;
 }
 
-.slider {
+// .slider {
 
-    &__list {
-        display: flex;
-        justify-content: center;
+//     &__list {
+//         display: flex;
+//         justify-content: center;
 
-        &--white li {
-            background-color: #fff;
-        }
+//         &--white li {
+//             background-color: #fff;
+//         }
 
-        &--colored li {
-            background-color: $color-main;
-        }
-    }
+//         &--colored li {
+//             background-color: $color-main;
+//         }
+//     }
 
-    &__item {
-        width: 1.2rem;
-        height: 1.2rem;
-        border-radius: 50%;
-        margin: 0 .7rem;
-        cursor: pointer;
-        opacity: .5;
+//     &__item {
+//         width: 1.2rem;
+//         height: 1.2rem;
+//         border-radius: 50%;
+//         margin: 0 .7rem;
+//         cursor: pointer;
+//         opacity: .5;
 
-        &--active {
-            opacity: 1;
-        }
-    }
-}
+//         &--active {
+//             opacity: 1;
+//         }
+//     }
+// }
 
 .features {
     display: flex;
