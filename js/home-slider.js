@@ -1,14 +1,14 @@
 "use strict";
 
 const homeBgImages = Array.from(document.querySelectorAll(".home__bg-img"));
-const dots = document.querySelector(".dots");
-const dot = Array.from(document.querySelectorAll(".dot"));
+const homeDots = document.querySelector(".home__dots");
+const homeDot = Array.from(document.querySelectorAll(".home__dot"));
 
 let slideIndex = 0;
 let slideInterval;
 
 function resetDots() {
-  dot.forEach((dot) => {
+  homeDot.forEach((dot) => {
     dot.classList.remove("active");
   });
 }
@@ -28,7 +28,7 @@ function changeSlide(i) {
 }
 
 function changeDot(i) {
-  dot[i].classList.add("active");
+  homeDot[i].classList.add("active");
 }
 
 function updateBg(i) {
@@ -48,7 +48,7 @@ function stopSlider() {
   clearInterval(slideInterval);
 }
 
-dots.addEventListener("click", (e) => {
+homeDots.addEventListener("click", (e) => {
   const clickedDot = e.target.closest(".dot");
   if (!clickedDot || clickedDot.classList.contains("active")) return;
   resetAll();
