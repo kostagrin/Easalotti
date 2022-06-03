@@ -1,0 +1,17 @@
+.bg-slider {
+  &__img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.8s ease-out;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+}

@@ -9,16 +9,16 @@
     position: relative;
     z-index: 2;
 
-    &__bg-img {
-        width: 100%;
-        height: auto;
-        transition: opacity 0.8s ease-out;
-        opacity: 0;
+    // &__bg-img {
+    //     width: 100%;
+    //     height: auto;
+    //     transition: opacity 0.8s ease-out;
+    //     opacity: 0;
       
-        &.active {
-          opacity: 1;
-        }
-    }
+    //     &.active {
+    //       opacity: 1;
+    //     }
+    // }
 
     &__bg-inner {
         position: relative;
