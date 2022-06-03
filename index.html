@@ -270,12 +270,31 @@
       </section>
 
       <!-- PROCESS #4 -->
-      <section id="process" class="process">
-        <h3 class="h2">Процесс изготовления мебели</h3>
+      <section id="process" class="process bg-slider">
+        <img
+            class="process__bg-img bg-slider__img active"
+            src="./img/process-1.jpg"
+            alt="process-1"
+            data-img-slide="0"
+          />
+          <img
+            class="process__bg-img bg-slider__img"
+            src="./img/process-2.jpg"
+            alt="process-2"
+            data-img-slide="1"
+          />
+          <img
+            class="process__bg-img bg-slider__img"
+            src="./img/process-3.jpg"
+            alt="process-3"
+            data-img-slide="2"
+          />
+          <div class="bg-slider__content process__content">
+        <h2 class="h2">Процесс изготовления мебели</h2>
         <a href="#" class="btn btn--dark btn--process process__btn"
           >Подробнее</a
         >
-        <div class="process__slider slider">
+        <!-- <div class="process__slider slider">
           <ul class="slider__list slider__list--colored" role="tablist">
             <li
               class="slider__item slider__item--active"
@@ -284,7 +303,25 @@
             <li class="slider__item" role="presentation"></li>
             <li class="slider__item" role="presentation"></li>
           </ul>
+        </div> -->
+        <div class="process__dots dots dots--colored">
+          <button
+            class="dot process__dot active"
+            type="button"
+            data-bg-dot="0"
+          ></button>
+          <button
+            class="dot process__dot"
+            type="button"
+            data-bg-dot="1"
+          ></button>
+          <button
+            class="dot process__dot"
+            type="button"
+            data-bg-dot="2"
+          ></button>
         </div>
+      </div>
       </section>
 
       <!-- BOOK #5 -->

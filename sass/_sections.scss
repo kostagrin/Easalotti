@@ -9,17 +9,6 @@
     position: relative;
     z-index: 2;
 
-    // &__bg-img {
-    //     width: 100%;
-    //     height: auto;
-    //     transition: opacity 0.8s ease-out;
-    //     opacity: 0;
-      
-    //     &.active {
-    //       opacity: 1;
-    //     }
-    // }
-
     &__bg-inner {
         position: relative;
         z-index: 1;
@@ -67,13 +56,11 @@
 
     &__btn {
         float: right;
-        // margin-bottom: 10.5rem;
     }
    
 
     &__shevron {
         display: block;
-        // margin: 6.6rem auto;
         position: absolute;
         @include adjust-horizontally;
         bottom: 19%;
@@ -224,20 +211,6 @@
         width: 50%;
         margin: 3rem auto;
     }
-}
-
-.process {
-    background-image: url(../img/process-1.jpg);
-    background-size: cover;
-    background-position: center;
-
-    &__btn {
-        margin: 10rem auto;
-    }
-
-    // &__slider {
-    //     margin: 0 auto;
-    // }
 }
 
 .book {

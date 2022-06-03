@@ -1,7 +1,7 @@
 .site-container {
   display: grid;
   // grid-template-rows: 107.044rem 54.7rem 1fr repeat(3, 48.7rem);
-  grid-template-rows: auto 54.7rem 1fr repeat(3, 48.7rem);
+  grid-template-rows: auto 54.7rem 1fr auto repeat(2, 48.7rem);
   // grid-template-rows: repeat(2, auto) 1fr repeat(3, 48.7rem);
 }
 
@@ -57,10 +57,15 @@
 }
 
 .process {
-  display: grid;
-  justify-content: center;
-  align-content: center;
   align-items: center;
+
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(3 auto);
+    row-gap: 5rem;
+    justify-content: center;
+    justify-items: center;
+  }
 }
 
 .book {

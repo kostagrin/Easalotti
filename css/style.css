@@ -403,7 +403,7 @@ button {
 
 .site-container {
   display: grid;
-  grid-template-rows: auto 54.7rem 1fr repeat(3, 48.7rem); }
+  grid-template-rows: auto 54.7rem 1fr auto repeat(2, 48.7rem); }
 
 .bg-slider {
   display: grid;
@@ -430,10 +430,13 @@ button {
   grid-row: 1 / 2; }
 
 .process {
-  display: grid;
-  justify-content: center;
-  align-content: center;
   align-items: center; }
+  .process__content {
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    row-gap: 5rem;
+    justify-content: center;
+    justify-items: center; }
 
 .book {
   display: flex;
@@ -587,13 +590,6 @@ button {
   width: 50%;
   margin: 3rem auto; }
 
-.process {
-  background-image: url(../img/process-1.jpg);
-  background-size: cover;
-  background-position: center; }
-  .process__btn {
-    margin: 10rem auto; }
-
 .book {
   background-image: url(../img/apply-bg.jpg);
   background-repeat: no-repeat;
@@ -647,7 +643,7 @@ button {
   z-index: 1; }
 
 .h2 {
-  font-size: 4rem;
+  font-size: 4.8rem;
   font-weight: 400; }
 
 .h3 {
