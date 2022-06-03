@@ -3,3 +3,8 @@ $color-main-transparent: rgba(103, 24, 43, .5);
 $color-secondary: #952b44; //rgb(149, 43, 68)
 $color-secondary-transparent: rgba(149, 43, 68, .5);
 $color-shadow: rgba(225, 225, 225, .5);
+
+@mixin adjust-horizontally {
+ left: 50%;
+ transform: translateX(-50%);
+}
