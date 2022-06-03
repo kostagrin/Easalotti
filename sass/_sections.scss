@@ -6,9 +6,24 @@
             rgba(0, 0, 0, .1) 50%,
             rgba(0, 0, 0, 0.05) 75%,
             rgba(0, 0, 0, 0) 100%);
-    background-position: center;
-    background-size: cover;
     position: relative;
+    z-index: 2;
+
+    &__bg-img {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.8s ease-out;
+        opacity: 0;
+      
+        &.active {
+          opacity: 1;
+        }
+    }
+
+    &__bg-inner {
+        position: relative;
+        z-index: 1;
+    }
 
     &__top-bar {
         color: #fff; //TEMP
