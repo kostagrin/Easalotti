@@ -213,6 +213,17 @@
     }
 }
 
+.process {
+    position: relative;
+    overflow: hidden;
+  
+    &__content {
+      position: absolute;
+      top: 25%;
+      @include adjust-horizontally;
+    }
+  }
+
 .book {
     background-image: url(../img/apply-bg.jpg);
     background-repeat: no-repeat;

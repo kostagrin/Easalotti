@@ -45,6 +45,15 @@ h1, .h2, .h3, p {
     }
 }
 
+p {
+    font-size: 2rem;
+
+    @media only screen and (max-width: 1600px) {
+        font-size: 1.9rem;
+    }
+}
+
+
 .hr {
     height: 1px;
     border-width:0;
