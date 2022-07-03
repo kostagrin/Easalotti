@@ -9,13 +9,13 @@ let slideInterval;
 
 function resetDots() {
   homeDot.forEach((dot) => {
-    dot.classList.remove("active");
+    dot.classList.remove("alive");
   });
 }
 
 function resetAll() {
   resetDots();
-  homeBgImages.forEach((img) => img.classList.remove("active"));
+  homeBgImages.forEach((img) => img.classList.remove("alive"));
 }
 
 const updateSlideIndex = function () {
@@ -24,11 +24,11 @@ const updateSlideIndex = function () {
 };
 
 function changeSlide(i) {
-  homeBgImages[i].classList.add("active");
+  homeBgImages[i].classList.add("alive");
 }
 
 function changeDot(i) {
-  homeDot[i].classList.add("active");
+  homeDot[i].classList.add("alive");
 }
 
 function updateBg(i) {
@@ -50,7 +50,7 @@ function stopSlider() {
 
 homeDots.addEventListener("click", (e) => {
   const clickedDot = e.target.closest(".dot");
-  if (!clickedDot || clickedDot.classList.contains("active")) return;
+  if (!clickedDot || clickedDot.classList.contains("alive")) return;
   resetAll();
   stopSlider();
   slideIndex = clickedDot.dataset.bgDot;

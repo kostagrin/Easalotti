@@ -5,7 +5,7 @@
     transition: opacity 0.8s ease-out;
     opacity: 0;
 
-    &.active {
+    &.alive {
       opacity: 1;
     }
   }
@@ -21,24 +21,21 @@
   justify-content: center;
 
   &--white .dot {
-      background-color: #fff;
+    background-color: #fff;
   }
 
   &--colored .dot {
-      background-color: $color-main;
+    background-color: $color-main;
   }
 }
 
-.dot {   
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 50%;
-  margin: 0 .7rem;
-  cursor: pointer;
-  opacity: .5;
+.dot {
+  @include dot-style;
+  opacity: 0.5;
   transition: opacity 0.3s ease-out;
+
+  &.alive {
+    opacity: 1;
+  }
 }
 
-.dot.active {
-  opacity: 1;
-}

@@ -1,485 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="sass/main.css" /> -->
-    <link rel="stylesheet" href="fonts/weblysleek.css" />
-    <link rel="stylesheet" href="fonts/WeblySleek UI Light.css" />
-    <script defer src="./js/home-slider.js"></script>
-    <title>Easalotti</title>
-  </head>
 
-  <body>
-    <div class="site-container">
-      <!-- HOME #1 -->
-      <section class="home bg-slider">
-          <img
-            class="home__bg-img bg-slider__img active"
-            src="./img/hero-1-dark.jpg"
-            alt="hero-1"
-            data-img-slide="0"
-          />
-          <img
-            class="home__bg-img bg-slider__img"
-            src="./img/hero-2-dark.jpg"
-            alt="hero-2"
-            data-img-slide="1"
-          />
-          <img
-            class="home__bg-img bg-slider__img"
-            src="./img/hero-3-dark.jpg"
-            alt="hero-3"
-            data-img-slide="2"
-          />
-        <div class="bg-slider__content">
-          <!-- TOP-BAR -->
-          <div class="home__top-bar">
-            <div class="row top-bar">
-              <form class="top-bar__form">
-                <input
-                  class="top-bar__form-input"
-                  type="text"
-                  placeholder="Поиск товара..."
-                />
-                <button class="top-bar__btn--search">
-                  <ion-icon name="search-outline"></ion-icon>
-                </button>
-              </form>
-              <p class="top-bar__open-hours">Ежедневно с 10:00 до 21:00</p>
-              <div class="top-bar__phone-img">
-                <ion-icon name="call"></ion-icon>
-              </div>
-              <a href="tel:88007000000" class="top-bar__phone-num">
-                <span>8 800 700 00 00</span>
-              </a>
-              <button class="top-bar__btn">Заказать звонок</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="fonts/weblysleek.css" />
+  <link rel="stylesheet" href="fonts/WeblySleek UI Light.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Easalotti</title>
+</head>
+
+<body>
+  <div class="site-container">
+    <!-- HOME #1 -->
+    <section class="home bg-slider">
+      <img class="home__bg-img bg-slider__img alive" src="./img/hero-1-dark.jpg"
+        alt="hero-1" data-img-slide="0" />
+      <img class="home__bg-img bg-slider__img" src="./img/hero-2-dark.jpg"
+        alt="hero-2" data-img-slide="1" />
+      <img class="home__bg-img bg-slider__img" src="./img/hero-3-dark.jpg"
+        alt="hero-3" data-img-slide="2" />
+      <div class="bg-slider__content">
+        <!-- TOP-BAR -->
+        <div class="home__top-bar">
+          <div class="row top-bar">
+            <form class="top-bar__form">
+              <input class="top-bar__form-input" type="text"
+                placeholder="Поиск товара..." />
+              <button class="top-bar__btn--search">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+            <p class="top-bar__open-hours">Ежедневно с 10:00 до 21:00</p>
+            <div class="top-bar__phone-img">
+              <ion-icon name="call"></ion-icon>
             </div>
-          </div>
-          <!-- LOGO -->
-          <div class="home__logo logo">
-            <span class="logo__main">&nbsp;</span>
-            <span class="logo__sub">Evrything about sofa</span>
-          </div>
-          <nav class="home__nav">
-            <ul class="row home-nav">
-              <li class="home-nav__item">
-                <a href="#" class="home-nav__link">Кресло и диван</a>
-              </li>
-              <li class="home-nav__item">
-                <a href="#" class="home-nav__link">Светильники и аксессуары</a>
-              </li>
-              <li class="home-nav__item">
-                <a href="#" class="home-nav__link">Спальные гарнитуры</a>
-              </li>
-              <li class="home-nav__item">
-                <a href="#" class="home-nav__link">Гостиные и столовые</a>
-              </li>
-              <li class="home-nav__item">
-                <a href="#" class="home-nav__link">Коллекции</a>
-              </li>
-              <li class="home-nav__item">
-                <a href="#" class="home-nav__link">Наша партнёры</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- H1 HEADER -->
-          <h1 class="row home__text-header">
-            <span>Скидки на</span><br />
-            <span>коллекции</span><br />
-            <span>от 20%</span>
-          </h1>
-
-          <div class="row">
-            <a href="#" class="btn btn--dark btn--home home__btn">Подробнее</a>
-          </div>
-          <!-- <div class="home__slider slider">
-            <ul class="slider__list slider__list--white" role="tablist">
-              <li class="slider__item slider__item--active" role="presentation">
-              </li>
-              <li class="slider__item" role="presentation"></li>
-              <li class="slider__item" role="presentation"></li>
-            </ul>
-          </div> -->
-          <div class="home__dots dots dots--white">
-            <button
-              class="dot home__dot active"
-              type="button"
-              data-bg-dot="0"
-            ></button>
-            <button
-              class="dot home__dot"
-              type="button"
-              data-bg-dot="1"
-            ></button>
-            <button
-              class="dot home__dot"
-              type="button"
-              data-bg-dot="2"
-            ></button>
-          </div>
-          <a href="#process" class="home__shevron">
-            <span class="home__shevron--icon">&nbsp;</span>
-          </a>
-        </div>
-      </section>
-
-      <!-- ABOUT #2 -->
-      <section class="about">
-        <h3 class="h3 h3--light">Easalotti - роскошь для вашего дома</h3>
-        <hr class="hr hr--dark hr--about" />
-        <div class="features">
-          <div class="features__feature">
-            <div class="features__img features__img--1"></div>
-            <h4 class="h4 h4--features">Натуральные материалы</h4>
-          </div>
-          <div class="features__feature">
-            <div class="features__img features__img--2">&nbsp;</div>
-            <h4 class="h4 h4--features">Изготовление мебели вручную</h4>
-          </div>
-          <div class="features__feature">
-            <div class="features__img features__img--3">&nbsp;</div>
-            <h4 class="h4 h4--features">Индивидуальный дизайн</h4>
-          </div>
-          <div class="features__feature">
-            <div class="features__img features__img--4">&nbsp;</div>
-            <h4 class="h4 h4--features">Итальянское качество</h4>
+            <a href="tel:88007000000" class="top-bar__phone-num">
+              <span>8 800 700 00 00</span>
+            </a>
+            <button class="top-bar__btn">Заказать звонок</button>
           </div>
         </div>
-      </section>
-
-      <!-- GALLERY #3 -->
-      <section class="gallery">
-        <div class="gallery__row gallery__row--1">
-          <figure class="gallery__picture">
-            <img
-              src="img/gallery-1.jpg"
-              alt="sofa"
-              class="gallery__picture__img"
-            />
-            <div
-              class="gallery__picture__romb gallery__picture__romb--right-stick"
-            >
-              &nbsp;
-            </div>
-          </figure>
-          <div class="gallery__text">
-            <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
-            <hr class="hr hr--dark gallery__hr" />
-            <p class="gallery__text__message">
-              Комфортная и практичная, невероятно элегантная и неизменно
-              стильная – это итальянская мебель. Только в стране, где мастера
-              свято берегут опыт столетий и гармонично сочетают его с новейшими
-              технологиями, знают, какой именно должна быть меблировка спальни,
-              гостиной или кухни. Наша компания предлагает лучшие образцы
-              мебельного искусства от фабрики, давно известной за пределами
-              страны.
-            </p>
-            <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
-          </div>
+        <!-- LOGO -->
+        <div class="home__logo logo">
+          <span class="logo__main">&nbsp;</span>
+          <span class="logo__sub">Evrything about sofa</span>
         </div>
-
-        <div class="gallery__row gallery__row--2">
-          <figure class="gallery__picture">
-            <img
-              src="img/gallery-2.jpg"
-              alt="dresser"
-              class="gallery__picture__img"
-            />
-            <div
-              class="gallery__picture__romb gallery__picture__romb--left-stick"
-            >
-              &nbsp;
-            </div>
-          </figure>
-          <div class="gallery__text">
-            <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
-            <hr class="hr hr--dark gallery__hr" />
-            <p class="gallery__text__message">
-              Комфортная и практичная, невероятно элегантная и неизменно
-              стильная – это итальянская мебель. Только в стране, где мастера
-              свято берегут опыт столетий и гармонично сочетают его с новейшими
-              технологиями, знают, какой именно должна быть меблировка спальни,
-              гостиной или кухни. Наша компания предлагает лучшие образцы
-              мебельного искусства от фабрики, давно известной за пределами
-              страны.
-            </p>
-            <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
-          </div>
-        </div>
-
-        <div class="gallery__row gallery__row--3">
-          <figure class="gallery__picture">
-            <img
-              src="img/gallery-3.jpg"
-              alt="bed"
-              class="gallery__picture__img"
-            />
-            <div
-              class="gallery__picture__romb gallery__picture__romb--right-stick"
-            >
-              &nbsp;
-            </div>
-          </figure>
-          <div class="gallery__text">
-            <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
-            <hr class="hr hr--dark gallery__hr" />
-            <p class="gallery__text__message">
-              Комфортная и практичная, невероятно элегантная и неизменно
-              стильная – это итальянская мебель. Только в стране, где мастера
-              свято берегут опыт столетий и гармонично сочетают его с новейшими
-              технологиями, знают, какой именно должна быть меблировка спальни,
-              гостиной или кухни. Наша компания предлагает лучшие образцы
-              мебельного искусства от фабрики, давно известной за пределами
-              страны.
-            </p>
-            <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
-          </div>
-        </div>
-
-        <div class="gallery__row gallery__row--4">
-          <figure class="gallery__picture">
-            <img
-              src="img/gallery-4.jpg"
-              alt="kitchen"
-              class="gallery__picture__img"
-            />
-            <div
-              class="gallery__picture__romb gallery__picture__romb--left-stick"
-            >
-              &nbsp;
-            </div>
-          </figure>
-          <div class="gallery__text">
-            <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
-            <hr class="hr hr--dark gallery__hr" />
-            <p class="gallery__text__message">
-              Комфортная и практичная, невероятно элегантная и неизменно
-              стильная – это итальянская мебель. Только в стране, где мастера
-              свято берегут опыт столетий и гармонично сочетают его с новейшими
-              технологиями, знают, какой именно должна быть меблировка спальни,
-              гостиной или кухни. Наша компания предлагает лучшие образцы
-              мебельного искусства от фабрики, давно известной за пределами
-              страны.
-            </p>
-            <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROCESS #4 -->
-      <section id="process" class="process bg-slider">
-        <img
-            class="process__bg-img bg-slider__img active"
-            src="./img/process-1.jpg"
-            alt="process-1"
-            data-img-slide="0"
-          />
-          <img
-            class="process__bg-img bg-slider__img"
-            src="./img/process-2.jpg"
-            alt="process-2"
-            data-img-slide="1"
-          />
-          <img
-            class="process__bg-img bg-slider__img"
-            src="./img/process-3.jpg"
-            alt="process-3"
-            data-img-slide="2"
-          />
-          <div class="bg-slider__content process__content">
-        <h2 class="h2">Процесс изготовления мебели</h2>
-        <a href="#" class="btn btn--dark btn--process process__btn"
-          >Подробнее</a
-        >
-        <!-- <div class="process__slider slider">
-          <ul class="slider__list slider__list--colored" role="tablist">
-            <li
-              class="slider__item slider__item--active"
-              role="presentation"
-            ></li>
-            <li class="slider__item" role="presentation"></li>
-            <li class="slider__item" role="presentation"></li>
+        <nav class="home__nav">
+          <ul class="row home-nav">
+            <li class="home-nav__item">
+              <a href="#" class="home-nav__link">Кресло и диван</a>
+            </li>
+            <li class="home-nav__item">
+              <a href="#" class="home-nav__link">Светильники и аксессуары</a>
+            </li>
+            <li class="home-nav__item">
+              <a href="#" class="home-nav__link">Спальные гарнитуры</a>
+            </li>
+            <li class="home-nav__item">
+              <a href="#" class="home-nav__link">Гостиные и столовые</a>
+            </li>
+            <li class="home-nav__item">
+              <a href="#" class="home-nav__link">Коллекции</a>
+            </li>
+            <li class="home-nav__item">
+              <a href="#" class="home-nav__link">Наша партнёры</a>
+            </li>
           </ul>
-        </div> -->
-        <div class="process__dots dots dots--colored">
-          <button
-            class="dot process__dot active"
-            type="button"
-            data-bg-dot="0"
-          ></button>
-          <button
-            class="dot process__dot"
-            type="button"
-            data-bg-dot="1"
-          ></button>
-          <button
-            class="dot process__dot"
-            type="button"
-            data-bg-dot="2"
-          ></button>
+        </nav>
+        <!-- H1 HEADER -->
+        <h1 class="row home__text-header">
+          <span>Скидки на</span><br />
+          <span>коллекции</span><br />
+          <span>от 20%</span>
+        </h1>
+
+        <div class="row">
+          <a href="#" class="btn btn--dark btn--home home__btn">Подробнее</a>
+        </div>
+        <div class="home__dots dots dots--white">
+          <button class="dot home__dot alive" type="button"
+            data-bg-dot="0"></button>
+          <button class="dot home__dot" type="button" data-bg-dot="1"></button>
+          <button class="dot home__dot" type="button" data-bg-dot="2"></button>
+        </div>
+        <a href="#process" class="home__shevron">
+          <span class="home__shevron--icon">&nbsp;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT #2 -->
+    <section class="about">
+      <h3 class="h3 h3--light">Easalotti - роскошь для вашего дома</h3>
+      <hr class="hr hr--dark hr--about" />
+      <div class="features">
+        <div class="features__feature">
+          <div class="features__img features__img--1"></div>
+          <h4 class="h4 h4--features">Натуральные материалы</h4>
+        </div>
+        <div class="features__feature">
+          <div class="features__img features__img--2">&nbsp;</div>
+          <h4 class="h4 h4--features">Изготовление мебели вручную</h4>
+        </div>
+        <div class="features__feature">
+          <div class="features__img features__img--3">&nbsp;</div>
+          <h4 class="h4 h4--features">Индивидуальный дизайн</h4>
+        </div>
+        <div class="features__feature">
+          <div class="features__img features__img--4">&nbsp;</div>
+          <h4 class="h4 h4--features">Итальянское качество</h4>
         </div>
       </div>
-      </section>
+    </section>
 
-      <!-- BOOK #5 -->
-      <section class="book">
-        <form class="book__form" action="/action_page.php">
-          <input
-            id="input"
-            class="book__form__search"
-            type="search"
-            autocomplete="off"
-            spellcheck="false"
-            role="combobox"
-            aria-live="polite"
-            placeholder="Введите номер телефона..."
-          />
-          <button class="btn btn--light btn--submit" type="button">
-            Оставить заявку
-          </button>
-        </form>
-      </section>
-
-      <!-- FOOTER #6 -->
-      <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__col">
-            <h5 class="h5 footer__h5">Кресло и диван</h5>
-            <ul class="cat">
-              <li class="cat__item">
-                <a href="#" class="cat__link">кресло</a>
-              </li>
-              <li class="cat__item"><a href="#" class="cat__link">диван</a></li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">кресло</a>
-              </li>
-              <li class="cat__item"><a href="#" class="cat__link">диван</a></li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">кресло</a>
-              </li>
-            </ul>
+    <!-- GALLERY #3 -->
+    <section class="gallery">
+      <div class="gallery__row gallery__row--1">
+        <figure class="gallery__picture">
+          <img src="img/gallery-1.jpg" alt="sofa"
+            class="gallery__picture__img" />
+          <div
+            class="gallery__picture__romb gallery__picture__romb--right-stick">
+            &nbsp;
           </div>
-          <div class="footer__gutter">&nbsp;</div>
-          <div class="footer__col">
-            <h5 class="h5 footer__h5">Светильники и аксессуары</h5>
-            <ul class="cat">
-              <li class="cat__item">
-                <a href="#" class="cat__link">светильники</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">аксессуары</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">светильники</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">аксессуары</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">светильники</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">аксессуары</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__gutter">&nbsp;</div>
-          <div class="footer__col">
-            <h5 class="h5 footer__h5">Спальные гарнитуры</h5>
-            <ul class="cat">
-              <li class="cat__item">
-                <a href="#" class="cat__link">кровать</a>
-              </li>
-              <li class="cat__item"><a href="#" class="cat__link">комод</a></li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">кровать</a>
-              </li>
-              <li class="cat__item"><a href="#" class="cat__link">комод</a></li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">кровать</a>
-              </li>
-              <li class="cat__item"><a href="#" class="cat__link">комод</a></li>
-            </ul>
-          </div>
-          <div class="footer__gutter">&nbsp;</div>
-          <div class="footer__col">
-            <h5 class="h5 footer__h5">Гостиные и столовые</h5>
-            <ul class="cat">
-              <li class="cat__item">
-                <a href="#" class="cat__link">гостиные</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">столовые</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">гостиные</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">столовые</a>
-              </li>
-              <li class="cat__item">
-                <a href="#" class="cat__link">гостиные</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__gutter">&nbsp;</div>
-          <div class="footer__col">
-            <h5 class="h5 footer__h5">Контакты</h5>
-            <address class="address">
-              <span class="address__metro">м. Серпуховская, Павелецкая</span
-              ><br />
-              <span class="address__office">1-й Щиповский переулок, дом 4</span
-              ><br />
-              <span class="address__hours">Ежедневно с 10:00 до 21:00</span
-              ><br />
-              <span class="address__phone">8 800 700 00 00</span>
-            </address>
-            <button
-              class="btn btn--light btn--footer footer__btn"
-              type="button"
-            >
-              Заказать дизайн проект
-            </button>
-            <ul class="social-links">
-              <li class="social-links__item">
-                <a href="#" class="social-links__link">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a href="#" class="social-links__link">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a href="#" class="social-links__link">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a href="#" class="social-links__link">
-                  <i class="fab fa-skype"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        </figure>
+        <div class="gallery__text">
+          <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
+          <hr class="hr hr--dark gallery__hr" />
+          <p class="gallery__text__message">
+            Комфортная и практичная, невероятно элегантная и неизменно
+            стильная – это итальянская мебель. Только в стране, где мастера
+            свято берегут опыт столетий и гармонично сочетают его с новейшими
+            технологиями, знают, какой именно должна быть меблировка спальни,
+            гостиной или кухни. Наша компания предлагает лучшие образцы
+            мебельного искусства от фабрики, давно известной за пределами
+            страны.
+          </p>
+          <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
         </div>
-      </footer>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/ce61efd15f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      </div>
+
+      <div class="gallery__row gallery__row--2">
+        <figure class="gallery__picture">
+          <img src="img/gallery-2.jpg" alt="dresser"
+            class="gallery__picture__img" />
+          <div
+            class="gallery__picture__romb gallery__picture__romb--left-stick">
+            &nbsp;
+          </div>
+        </figure>
+        <div class="gallery__text">
+          <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
+          <hr class="hr hr--dark gallery__hr" />
+          <p class="gallery__text__message">
+            Комфортная и практичная, невероятно элегантная и неизменно
+            стильная – это итальянская мебель. Только в стране, где мастера
+            свято берегут опыт столетий и гармонично сочетают его с новейшими
+            технологиями, знают, какой именно должна быть меблировка спальни,
+            гостиной или кухни. Наша компания предлагает лучшие образцы
+            мебельного искусства от фабрики, давно известной за пределами
+            страны.
+          </p>
+          <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="gallery__row gallery__row--3">
+        <figure class="gallery__picture">
+          <img src="img/gallery-3.jpg" alt="bed"
+            class="gallery__picture__img" />
+          <div
+            class="gallery__picture__romb gallery__picture__romb--right-stick">
+            &nbsp;
+          </div>
+        </figure>
+        <div class="gallery__text">
+          <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
+          <hr class="hr hr--dark gallery__hr" />
+          <p class="gallery__text__message">
+            Комфортная и практичная, невероятно элегантная и неизменно
+            стильная – это итальянская мебель. Только в стране, где мастера
+            свято берегут опыт столетий и гармонично сочетают его с новейшими
+            технологиями, знают, какой именно должна быть меблировка спальни,
+            гостиной или кухни. Наша компания предлагает лучшие образцы
+            мебельного искусства от фабрики, давно известной за пределами
+            страны.
+          </p>
+          <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="gallery__row gallery__row--4">
+        <figure class="gallery__picture">
+          <img src="img/gallery-4.jpg" alt="kitchen"
+            class="gallery__picture__img" />
+          <div
+            class="gallery__picture__romb gallery__picture__romb--left-stick">
+            &nbsp;
+          </div>
+        </figure>
+        <div class="gallery__text">
+          <h3 class="h3 h3--dark">Easalotti - роскошь для вашего дома</h3>
+          <hr class="hr hr--dark gallery__hr" />
+          <p class="gallery__text__message">
+            Комфортная и практичная, невероятно элегантная и неизменно
+            стильная – это итальянская мебель. Только в стране, где мастера
+            свято берегут опыт столетий и гармонично сочетают его с новейшими
+            технологиями, знают, какой именно должна быть меблировка спальни,
+            гостиной или кухни. Наша компания предлагает лучшие образцы
+            мебельного искусства от фабрики, давно известной за пределами
+            страны.
+          </p>
+          <a href="#" class="btn btn--outline btn--gallery">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS #4 -->
+    <section id="process" class="process">
+      <div class="slider">
+        <div class="slider__item">
+          <img src="./img/process-1.jpg" alt="process-1""/>
+          </div>
+          <div class=" slider__item">
+          <img src="./img/process-2.jpg" alt="process-2" />
+        </div>
+        <div class="slider__item">
+          <img src="./img/process-3.jpg" alt="process-3" />
+        </div>
+      </div>
+
+      <div class="process__content">
+        <h2 class="h2">Процесс изготовления мебели</h2>
+        <a href="#"
+          class="btn btn--dark btn--process process__btn">Подробнее</a>
+    </section>
+
+    <!-- BOOK #5 -->
+    <section class="book">
+      <form class="book__form" action="/action_page.php">
+        <input id="input" class="book__form__search" type="search"
+          autocomplete="off" spellcheck="false" role="combobox"
+          aria-live="polite" placeholder="Введите номер телефона..." />
+        <button class="btn btn--light btn--submit" type="button">
+          Оставить заявку
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER #6 -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col">
+          <h5 class="h5 footer__h5">Кресло и диван</h5>
+          <ul class="cat">
+            <li class="cat__item">
+              <a href="#" class="cat__link">кресло</a>
+            </li>
+            <li class="cat__item"><a href="#" class="cat__link">диван</a></li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">кресло</a>
+            </li>
+            <li class="cat__item"><a href="#" class="cat__link">диван</a></li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">кресло</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__gutter">&nbsp;</div>
+        <div class="footer__col">
+          <h5 class="h5 footer__h5">Светильники и аксессуары</h5>
+          <ul class="cat">
+            <li class="cat__item">
+              <a href="#" class="cat__link">светильники</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">аксессуары</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">светильники</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">аксессуары</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">светильники</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">аксессуары</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__gutter">&nbsp;</div>
+        <div class="footer__col">
+          <h5 class="h5 footer__h5">Спальные гарнитуры</h5>
+          <ul class="cat">
+            <li class="cat__item">
+              <a href="#" class="cat__link">кровать</a>
+            </li>
+            <li class="cat__item"><a href="#" class="cat__link">комод</a></li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">кровать</a>
+            </li>
+            <li class="cat__item"><a href="#" class="cat__link">комод</a></li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">кровать</a>
+            </li>
+            <li class="cat__item"><a href="#" class="cat__link">комод</a></li>
+          </ul>
+        </div>
+        <div class="footer__gutter">&nbsp;</div>
+        <div class="footer__col">
+          <h5 class="h5 footer__h5">Гостиные и столовые</h5>
+          <ul class="cat">
+            <li class="cat__item">
+              <a href="#" class="cat__link">гостиные</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">столовые</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">гостиные</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">столовые</a>
+            </li>
+            <li class="cat__item">
+              <a href="#" class="cat__link">гостиные</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__gutter">&nbsp;</div>
+        <div class="footer__col">
+          <h5 class="h5 footer__h5">Контакты</h5>
+          <address class="address">
+            <span class="address__metro">м. Серпуховская,
+              Павелецкая</span><br />
+            <span class="address__office">1-й Щиповский переулок, дом
+              4</span><br />
+            <span class="address__hours">Ежедневно с 10:00 до 21:00</span><br />
+            <span class="address__phone">8 800 700 00 00</span>
+          </address>
+          <button class="btn btn--light btn--footer footer__btn" type="button">
+            Заказать дизайн проект
+          </button>
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a href="#" class="social-links__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__link">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__link">
+                <i class="fab fa-skype"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/ce61efd15f.js"
+    crossorigin="anonymous"></script>
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+  <script src="js/slick.min.js"></script>
+  <script type="text/javascript" src="./js/slick-slider.js"></script>
+
+  <script type="text/javascript" src="./js/home-slider.js"></script>
+</body>
+
 </html>
