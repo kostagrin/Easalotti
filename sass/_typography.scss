@@ -1,3 +1,7 @@
+h1, .h2, .h3, p {
+    color: $color-dark;
+}
+
 .h2 {
     font-size: 4.8rem;
     font-weight: 400;
@@ -9,6 +13,7 @@
 
     &--light {
         font-weight: 400;
+        color: #fff;
     }
 }
 
