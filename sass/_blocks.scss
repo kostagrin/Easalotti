@@ -28,6 +28,7 @@
 
     &__open-hours {
         margin: auto auto auto 2.5rem;
+        color: #fff;
     }
 
     &__form {
@@ -200,7 +201,6 @@
 }
 
 .cat {
-
     &__item {
         line-height: 1.7;
     }
@@ -259,7 +259,7 @@
         @media only screen and (max-width: 1200px) {
             width: 4rem;
             height: 4rem;
-        }
+        }        
     }
 
     &__link {
@@ -281,15 +281,8 @@
     @media only screen and (max-width: 1780px) {
         width: 23rem;
     }
+    
+    @media only screen and (max-width: 1200px) {
+        width: 20rem;
+    }
 }
-
-// .fab {
-// }
-// .fa-facebook-f {
-// }
-// .fa-instagram {
-// }
-// .fa-youtube {
-// }
-// .fa-skype {
-// }

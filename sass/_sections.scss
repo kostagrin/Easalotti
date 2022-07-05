@@ -32,38 +32,59 @@
     }
 
     &__text-header {
-        margin: 10rem auto 5.5rem;
-        text-align: right;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: end;
+        align-self: end;
         font-size: 8rem;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1;
+        text-align: end;
         color: #fff;
 
         & span:first-child {
             letter-spacing: 1.35px;
         }
 
-        @media only screen and (max-width: 1180px) {
+        @media only screen and (max-width: 1460px) {
+            font-size: 7.5rem;
+            font-weight: 300;
+        }
+
+        @media only screen and (max-width: 1400px) {
             font-size: 7rem;
-            ;
+        }
+        
+        @media only screen and (max-width: 1366px) {
+            font-size: 6.7rem;            
+          }
+      
+        @media only screen and (max-width: 1200px) {
+            font-size: 6rem;
+        }
+
+        @media only screen and (max-width: 1180px) {
+            font-size: 5rem;
         }
 
         @media only screen and (max-width: 984px) {
-            font-size: 6rem;
-            ;
+            font-size: 5.5rem;
         }
     }
 
     &__btn {
-        float: right;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        justify-self: end;
+        align-self: start;
     }
-   
+
 
     &__shevron {
         display: block;
-        position: absolute;
-        @include adjust-horizontally;
-        bottom: 19%;
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+        margin-top: 11rem;
         width: 55px;
         height: 42px;
         background-color: $color-main;
@@ -86,12 +107,24 @@
                 transform: translate(-50%, -40%);
             }
         }
+
+        @media only screen and (max-width: 1860px) {
+            margin-top: 8rem;
+        }
+
+        @media only screen and (max-width: 1800px) {
+            margin-top: 4rem;
+        }
+
+        @media only screen and (max-width: 1660px) {
+            margin-top: 0;
+        }
     }
 
     &__dots {
-        position: absolute;
-        @include adjust-horizontally;
-        bottom: 26%;
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        align-self: end;
     }
 }
 
@@ -216,13 +249,20 @@
 .process {
     position: relative;
     overflow: hidden;
-  
+    
     &__content {
-      position: absolute;
-      top: 25%;
-      @include adjust-horizontally;
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        @include adjust-horizontally;
+        
+        @media only screen and (max-width: 1200px) {
+            top: 15%;
+            row-gap: 2rem;
+          }
     }
-  }
+}
 
 .book {
     background-image: url(../img/apply-bg.jpg);
@@ -265,6 +305,10 @@
     &__container {
         margin-top: 4rem;
         height: 80%;
+
+        @media only screen and (max-width: 1366px) {
+            width: 80%;            
+          }
     }
 
     &__gutter {
@@ -279,8 +323,4 @@
     &__btn {
         margin: 2.3rem auto;
     }
-
-    // @media only screen and (max-width: 1780px) {
-    //     font-size: 95%;
-    // }
 }

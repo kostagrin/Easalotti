@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -71,26 +71,28 @@
           </ul>
         </nav>
         <!-- H1 HEADER -->
-        <h1 class="row home__text-header">
-          <span>Скидки на</span><br />
-          <span>коллекции</span><br />
-          <span>от 20%</span>
-        </h1>
+        <header class="header">         
+            <h1 class="home__text-header">
+              <span>Скидки на</span><br />
+              <span>коллекции</span><br />
+              <span>от 20%</span>
+            </h1> 
 
-        <div class="row">
-          <a href="#" class="btn btn--dark btn--home home__btn">Подробнее</a>
+            <a href="#" class="btn btn--dark btn--home home__btn">Подробнее</a>
+        
+          <div class="home__dots dots dots--white">
+            <button class="dot home__dot alive" type="button"
+              data-bg-dot="0"></button>
+            <button class="dot home__dot" type="button" data-bg-dot="1"></button>
+            <button class="dot home__dot" type="button" data-bg-dot="2"></button>
+          </div>
+          <a href="#process" class="home__shevron">
+            <span class="home__shevron--icon">&nbsp;</span>
+          </a>
         </div>
-        <div class="home__dots dots dots--white">
-          <button class="dot home__dot alive" type="button"
-            data-bg-dot="0"></button>
-          <button class="dot home__dot" type="button" data-bg-dot="1"></button>
-          <button class="dot home__dot" type="button" data-bg-dot="2"></button>
-        </div>
-        <a href="#process" class="home__shevron">
-          <span class="home__shevron--icon">&nbsp;</span>
-        </a>
-      </div>
-    </section>
+      </section>
+        </header>
+
 
     <!-- ABOUT #2 -->
     <section class="about">
