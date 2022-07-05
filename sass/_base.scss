@@ -12,8 +12,10 @@ html {
 }
 
 body {
+    position: relative;
     box-sizing: border-box;
     font: 1.6rem 'WeblySleek UI', sans-serif;
+    transition:all 1s;
 }
 
 ::-moz-selection {
