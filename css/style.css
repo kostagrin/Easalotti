@@ -134,7 +134,8 @@ ul {
 
 .features {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-width: 90rem; }
   .features__feature {
     display: flex;
     flex-direction: column;
@@ -360,16 +361,13 @@ button {
   margin-bottom: 3.8rem; }
 
 .header {
-  display: grid;
-  grid-template-rows: 24rem 9rem 4.7rem 5rem;
-  grid-template-columns: 1fr 3fr 1fr;
-  row-gap: 5.5rem;
-  max-height: 76%;
-  height: 100%;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center; }
+  max-width: 114rem;
+  margin: auto;
+  margin-top: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .about {
   display: flex;
@@ -387,7 +385,7 @@ button {
 .process__content {
   display: grid;
   grid-template-rows: repeat(3 auto);
-  row-gap: 5rem;
+  row-gap: 7.5rem;
   justify-content: center;
   justify-items: center; }
 
@@ -401,34 +399,12 @@ button {
   justify-content: center; }
   .footer__container {
     display: grid;
+    grid-template-columns: repeat(8, minmax(3rem, -webkit-max-content)) minmax(4.5rem, -webkit-max-content);
     grid-template-columns: repeat(8, minmax(3rem, max-content)) minmax(4.5rem, max-content);
+    grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
     grid-template-rows: minmax(min-content, max-content);
     justify-content: space-between;
-    width: 57vw; }
-
-@media only screen and (max-width: 1536px) {
-  .home__shevron {
-    margin-top: 8rem; } }
-
-@media only screen and (max-width: 1366px) {
-  p {
-    color: red !important; } }
-
-@media only screen and (max-width: 992px) {
-  p {
-    color: red !important; } }
-
-@media only screen and (max-width: 768px) {
-  p {
-    color: red !important; } }
-
-@media only screen and (max-width: 576px) {
-  p {
-    color: red !important; } }
-
-@media only screen and (max-width: 3200px) {
-  p {
-    color: red !important; } }
+    width: 114rem; }
 
 .modal {
   display: block;
@@ -502,9 +478,6 @@ button {
     height: 4.8rem;
     background-color: #67182b; }
   .home__text-header {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    justify-self: end;
     align-self: end;
     font-size: 8rem;
     font-weight: 400;
@@ -514,14 +487,13 @@ button {
     .home__text-header span:first-child {
       letter-spacing: 1.35px; }
   .home__btn {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    justify-self: end;
-    align-self: start; }
+    align-self: flex-end;
+    font-size: inherit;
+    margin-top: 5rem; }
+  .home__dots {
+    margin-top: 14.5rem; }
   .home__shevron {
     display: block;
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
     margin-top: 11rem;
     width: 55px;
     height: 42px;
@@ -541,10 +513,6 @@ button {
       transition: all 0.2s; }
       .home__shevron--icon:hover {
         transform: translate(-50%, -40%); }
-  .home__dots {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    align-self: end; }
 
 .about {
   background-color: #67182b;
@@ -622,7 +590,7 @@ button {
   .process__content {
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     left: 50%;
     transform: translateX(-50%); }
@@ -636,7 +604,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 57%;
+    width: 114rem;
     border: 1px solid #fff;
     padding: 3rem; }
     .book__form__search {
@@ -772,11 +740,13 @@ p {
 
 .h2 {
   font-size: 4.8rem;
-  font-weight: 400; }
+  font-weight: 400;
+  letter-spacing: 2px; }
 
 .h3 {
   text-transform: uppercase;
-  font-size: 2rem; }
+  font-size: 2rem;
+  letter-spacing: 1px; }
   .h3--light {
     font-weight: 400;
     color: #fff; }

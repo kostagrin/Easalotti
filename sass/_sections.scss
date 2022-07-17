@@ -34,9 +34,9 @@
   }
 
   &__text-header {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    justify-self: end;
+    // grid-row: 1 / 2;
+    // grid-column: 2 / 3;
+    // justify-self: end;
     align-self: end;
     font-size: 8rem;
     font-weight: 400;
@@ -75,17 +75,24 @@
   }
 
   &__btn {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    justify-self: end;
-    align-self: start;
+    // grid-row: 2 / 3;
+    // grid-column: 2 / 3;
+    // justify-self: end;
+    align-self: flex-end;
+    font-size: inherit;
+    margin-top: 5rem;
+  }
+
+  &__dots {
+    margin-top: 14.5rem;
   }
 
   &__shevron {
     display: block;
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
+    // grid-row: 4 / 5;
+    // grid-column: 2 / 3;
     margin-top: 11rem;
+    // align-self: end;
     width: 55px;
     height: 42px;
     background-color: $color-main;
@@ -110,11 +117,11 @@
     }
   }
 
-  &__dots {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    align-self: end;
-  }
+  //   &__dots {
+  //     grid-row: 3 / 4;
+  //     grid-column: 2 / 3;
+  //     align-self: end;
+  //   }
 }
 
 .about {
@@ -238,7 +245,7 @@
   &__content {
     width: 100%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     @include adjust-horizontally;
 
@@ -259,7 +266,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 57%;
+    width: 114rem;
     border: 1px solid #fff;
     padding: 3rem;
 
