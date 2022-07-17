@@ -403,7 +403,7 @@ button {
     grid-template-columns: repeat(8, minmax(3rem, max-content)) minmax(4.5rem, max-content);
     grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
     grid-template-rows: minmax(min-content, max-content);
-    justify-content: space-between;
+    justify-content: center;
     width: 114rem; }
 
 .modal {
@@ -773,7 +773,8 @@ p {
     margin: 6.3rem auto; }
 
 address {
-  font-style: normal; }
+  font-style: normal;
+  line-height: 1.5; }
 
 .home-nav__link {
   display: inline-block; }
