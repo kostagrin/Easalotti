@@ -1,50 +1,49 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-    position: relative;
-    box-sizing: border-box;
-    font: 1.6rem 'WeblySleek UI', sans-serif;
-    transition:all 1s;
+  position: relative;
+  box-sizing: border-box;
+  font: 1.6rem "WeblySleek UI", sans-serif;
+  transition: all 1s;
 }
 
 ::-moz-selection {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 ::selection {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .row {
-    max-width: 114rem;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 114rem;
+  width: 100%;
+  margin: 0 auto;
 
-    
-    &::after {
-        display: block;
-        content: "";
-        clear: both;
-    }
-   
-    @media only screen and (max-width: 1180px) {
-        width: 95%;
-    }
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  // @media only screen and (max-width: 1180px) {
+  //     width: 95%;
+  // }
 }
 
 /*

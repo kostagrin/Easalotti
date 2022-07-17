@@ -1,85 +1,88 @@
-h1, .h2, .h3, p {
-    color: $color-dark;
+h1,
+.h2,
+.h3,
+p {
+  color: $color-dark;
 }
 
 .h2 {
-    font-size: 4.8rem;
-    font-weight: 400;
+  font-size: 4.8rem;
+  font-weight: 400;
 
-    @media only screen and (max-width: 1320px) {
-        font-size: 4rem;
-      }
+  // @media only screen and (max-width: 1320px) {
+  //     font-size: 4rem;
+  //   }
 }
 
 .h3 {
-    text-transform: uppercase;
-    font-size: 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
 
-    &--light {
-        font-weight: 400;
-        color: #fff;
-    }
+  &--light {
+    font-weight: 400;
+    color: #fff;
+  }
 }
 
 .h4 {
-    &--features {
-        font-size: 2.2rem;
-        font-weight: 300;
+  &--features {
+    font-size: 2.2rem;
+    font-weight: 300;
 
-        @media only screen and (max-width: 1400px) {
-            font-size: 2.1rem;           
-        }
+    // @media only screen and (max-width: 1400px) {
+    //     font-size: 2.1rem;
+    // }
 
-        @media only screen and (max-width: 1200px) {
-            font-size: 2rem;
-        }
+    // @media only screen and (max-width: 1200px) {
+    //     font-size: 2rem;
+    // }
 
-        @media only screen and (max-width: 984px) {
-           font-size: 1.8rem;;
-        }
-    }
+    // @media only screen and (max-width: 984px) {
+    //    font-size: 1.8rem;;
+    // }
+  }
 }
 
 .h5 {
-    font-size: 1.8rem;
-    font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 400;
 
-    @media only screen and (max-width: 1780px) {
-        font-size: 95%;
-    }
+  // @media only screen and (max-width: 1780px) {
+  //     font-size: 95%;
+  // }
 }
 
 p {
-    font-size: 2rem;
+  font-size: 2rem;
 
-    @media only screen and (max-width: 1600px) {
-        font-size: 1.9rem;
-    }
+  // @media only screen and (max-width: 1600px) {
+  //     font-size: 1.9rem;
+  // }
 
-    @media only screen and (max-width: 1320px) {
-        font-size: 1.8rem;
-      }
+  // @media only screen and (max-width: 1320px) {
+  //     font-size: 1.8rem;
+  //   }
 }
 
 .hr {
-    height: 1px;
-    border-width:0;
+  height: 1px;
+  border-width: 0;
 
-    &--dark {
-        color: $color-secondary;
-        background-color: $color-secondary;
-    }
+  &--dark {
+    color: $color-secondary;
+    background-color: $color-secondary;
+  }
 
-    &--about {
-        width: 19rem;
-        margin: 6.3rem auto;
-    }
+  &--about {
+    width: 19rem;
+    margin: 6.3rem auto;
+  }
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .home-nav__link {
-    display: inline-block;
+  display: inline-block;
 }

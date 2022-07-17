@@ -50,142 +50,141 @@ a:active - a link the moment it is clicked
 */
 
 .btn {
-    transition: all .3s ease-in-out;
-    text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 0;
 
-    &:link,
-    &:visited {
-        text-decoration: none;
-        font-weight: 300;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        font-size: 2rem;
-        box-shadow: 0;
+    // @media only screen and (max-width: 1780px) {
+    //     font-size: 95%;
+    // }
+  }
 
-        // @media only screen and (max-width: 1780px) {
-        //     font-size: 95%;
-        // }
+  &:hover,
+  &:active {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+    font-weight: normal;
+  }
+
+  &--outline {
+    color: $color-secondary;
+    background-color: transparent;
+    border: 1px solid $color-secondary;
+
+    &:hover {
+      color: #fff;
+      background-color: $color-secondary;
+      border: 1px solid $color-main;
     }
+  }
 
-    &:hover,
-    &:active {
-        box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
-        letter-spacing: .5px;
-        font-weight: normal;
+  &--light {
+    color: #fff;
+    background-color: $color-secondary;
+    border: 1px solid $color-main;
+
+    &:hover {
+      background-color: $color-main;
+      border: 1px solid #fff;
     }
+  }
 
-    &--outline {
-        color: $color-secondary;
-        background-color: transparent;
-        border: 1px solid $color-secondary;
+  &--dark {
+    color: #fff;
+    background-color: $color-main;
+    border: 1px solid $color-secondary-transparent;
 
-        &:hover {
-            color: #fff;
-            background-color: $color-secondary;
-            border: 1px solid $color-main;
-        }
+    &:hover {
+      background-color: $color-secondary-transparent;
+      border: 1px solid $color-shadow;
     }
+  }
 
-    &--light {
-        color: #fff;
-        background-color: $color-secondary;
-        border: 1px solid $color-main;
+  &--home {
+    width: 23.5rem;
+    height: 4.8rem;
 
-        &:hover {
-            background-color: $color-main;
-            border: 1px solid #fff;
-        }
-    }
+    // @media only screen and (max-width: 1180px) {
+    //     width: 21rem;
+    //     font-size: 1.8rem;
+    // }
 
-    &--dark {
-        color: #fff;
-        background-color: $color-main;
-        border: 1px solid $color-secondary-transparent;
+    // @media only screen and (max-width: 984px) {
+    //     width: 18rem;
+    //  }
+  }
 
-        &:hover {
-            background-color: $color-secondary-transparent;
-            border: 1px solid $color-shadow;
-        }
-    }
+  &--gallery {
+    width: 22.6rem;
+    height: 4.8rem;
 
-    &--home {
-        width: 23.5rem;
-        height: 4.8rem;
+    // @media only screen and (max-width: 1180px) {
+    //     width: 21rem;
+    //     font-size: 1.8rem;
+    // }
 
-        @media only screen and (max-width: 1180px) {
-            width: 21rem;
-            font-size: 1.8rem;
-        }
-        
-        @media only screen and (max-width: 984px) {
-            width: 18rem;
-         }
-        }
-    
-    &--gallery {
-        width: 22.6rem;
-        height: 4.8rem;
-        
-        @media only screen and (max-width: 1180px) {
-            width: 21rem;
-            font-size: 1.8rem;
-        }
+    // @media only screen and (max-width: 984px) {
+    //     width: 18rem;
+    //  }
+  }
 
-        @media only screen and (max-width: 984px) {
-            width: 18rem;
-         }
-    }
-    
-    &--process {
-        width: 22.6rem;
-        height: 4.8rem;
-        
-        @media only screen and (max-width: 1180px) {
-            width: 21rem;
-            font-size: 1.8rem;
-        }
+  &--process {
+    width: 22.6rem;
+    height: 4.8rem;
 
-        @media only screen and (max-width: 984px) {
-            width: 18rem;
-         }
-    }
+    // @media only screen and (max-width: 1180px) {
+    //     width: 21rem;
+    //     font-size: 1.8rem;
+    // }
 
-    &--submit {
-        width: 24.9rem;
-        height: 4.4rem;
-        
-        @media only screen and (max-width: 1780px) {
-            font-size: 95%;
-            width: 21rem;
-        }
+    // @media only screen and (max-width: 984px) {
+    //     width: 18rem;
+    //  }
+  }
 
-        @media only screen and (max-width: 1200px) {
-            width: 20rem;
-        }
+  &--submit {
+    width: 24.9rem;
+    height: 4.4rem;
 
-    }
-    
-    &--footer {
-        width: 25rem;
-        height: 4.7rem;
-        
-        @media only screen and (max-width: 1780px) {
-            font-size: 95%;
-            width: 23rem;
-        }
-        
-        @media only screen and (max-width: 1200px) {
-            font-size: 80%;
-            width: 20rem;
-        }
-    }
+    // @media only screen and (max-width: 1780px) {
+    //     font-size: 95%;
+    //     width: 21rem;
+    // }
+
+    // @media only screen and (max-width: 1200px) {
+    //     width: 20rem;
+    // }
+  }
+
+  &--footer {
+    width: 25rem;
+    height: 4.7rem;
+
+    // @media only screen and (max-width: 1780px) {
+    //     font-size: 95%;
+    //     width: 23rem;
+    // }
+
+    // @media only screen and (max-width: 1200px) {
+    //     font-size: 80%;
+    //     width: 20rem;
+    // }
+  }
 }
 
 button {
-    border: none;
-    font-size: inherit;
-    background-color: transparent;
+  border: none;
+  font-size: inherit;
+  background-color: transparent;
 }
